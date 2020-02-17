@@ -28,7 +28,7 @@
     <img src="./pic/qrcode.jpg" width="400"/>
 </center>
 
-# 您的心意
+# 只要你打赏一元就好
 
 <center class="half">
     <img src="./pic/1.jpg" width="400"/>
