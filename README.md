@@ -20,7 +20,7 @@ DLL版本：1.0.0.00
 
 <center>
     <figure>
-<img src="./pic/1.jpg" width="200" title="1点心意"/>
-<img src="./pic/18.jpg" width="200" title="18开心"/>
-</figure>
+        <img src="./pic/1.jpg" width="200"/>
+        <img src="./pic/18.jpg" width="200"/>
+    </figure>
 </center>
