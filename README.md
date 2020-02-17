@@ -28,7 +28,7 @@
     <img src="./pic/qrcode.jpg" width="400"/>
 </center>
 
-# 如果你愿意，我谢谢
+# 您的心意
 
 <center class="half">
     <img src="./pic/1.jpg" width="400"/>
