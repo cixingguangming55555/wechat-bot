@@ -20,8 +20,6 @@ DLL版本：1.0.0.00
 
 
     <figure class="third">
-        <img src="./pic/1.jpg" width="200"/>
-        <img src="./pic/18.jpg" width="200"/>
-        <img src="./pic/38.jpg" width="200"/>
+        <img src="./pic/1.jpg" width="200"/><img src="./pic/18.jpg" width="200"/><img src="./pic/38.jpg" width="200"/>
     </figure>
 
