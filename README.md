@@ -18,7 +18,6 @@
 # 交流
 # 咖啡时间
 
-<center class="third">
-        <img src="./pic/1.jpg" width="200"/><img src="./pic/18.jpg" width="200"/><img src="./pic/38.jpg" width="200"/>
+<center class="half">
+    <img src="./pic/1.jpg" width="200"/><img src="./pic/18.jpg" width="200"/><img src="./pic/38.jpg" width="200"/>
 </center>
-
