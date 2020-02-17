@@ -28,8 +28,8 @@
     <img src="./pic/qrcode.jpg" width="400"/>
 </center>
 
-# 只要你打赏一元就好
+# 一杯咖啡
 
 <center class="half">
-    <img src="./pic/1.jpg" width="400"/>
+    <img src="./pic/38.jpg" width="400"/>
 </center>
