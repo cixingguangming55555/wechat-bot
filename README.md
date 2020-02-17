@@ -17,10 +17,6 @@ DLL版本：1.0.0.00
 4、其它根据需求增加  
 # 交流
 # 咖啡时间
-<center>
-<figure>
-<img src="./pic/1.jpg" />
-<img src="./pic/28.jpg" />
-<img src="./pic/38.jpg" />
-</figure>
+<center class="half">
+    <img src="./pic/1.jpg" width="200"/><img src="./pic/28.jpg" width="200"/><img src="./pic/38.jpg" width="200"/>
 </center>
