@@ -30,7 +30,7 @@
     <img src="./pic/qrcode.jpg" width="400"/>
 </center>
 
-# 一杯咖啡
+# 请我喝咖啡
 
 <center class="half">
     <img src="./pic/38.jpg" width="400"/>
