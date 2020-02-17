@@ -21,6 +21,7 @@
 <center class="half">
     <img src="./pic/qrcode.jpg" width="400"/>
 </center>
+
 # 如果你愿意，我谢谢
 
 <center class="half">
