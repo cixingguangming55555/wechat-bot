@@ -16,7 +16,12 @@
 3、客户端接收微信收到的文本消息  
 4、其它根据需求增加  
 # 交流
-# 咖啡时间
+请扫码入群，备注：bot.空了我会处理的。
+
+<center class="half">
+    <img src="./pic/qrcode.jpg" width="400"/>
+</center>
+# 如果你愿意，我谢谢
 
 <center class="half">
     <img src="./pic/1.jpg" width="400"/>
