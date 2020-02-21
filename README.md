@@ -45,3 +45,5 @@
 <center class="half">
     <img src="./pic/38.jpg" width="400"/>
 </center>
+# Change Log
+* 2020/2/21 修复获取好友不完整的bug
