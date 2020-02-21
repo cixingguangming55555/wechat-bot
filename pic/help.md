@@ -11,6 +11,6 @@ feature:send pic message
 
 ## version 1.0.0.00（2020-02-18)
 feature:websocket server  
-feature:send txt message
-feature:get user list
-feature:receive the wechat txt message
+feature:send txt message  
+feature:get user list  
+feature:receive the wechat txt message  
