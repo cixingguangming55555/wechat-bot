@@ -2,7 +2,7 @@
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
 点整包下载或release，下载最新版本  
 # 整包下载
-[整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/1.0.0.50.zip)
+[整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/1.0.1.51.zip)
 # 文档
 [开发文档](https://www.showdoc.cc/wechatbot)
 # 声明
