@@ -1,6 +1,8 @@
 # wechat-bot  馈人玫瑰之手，历久犹有余香
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
 点整包下载或release，下载最新版本  
+# 开源
+* [2.7.1.88内存获取用户信息](userlist.cpp)
 # 整包下载
 [整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/1.1.1.51.zip)
 # 文档
