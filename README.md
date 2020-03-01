@@ -52,3 +52,6 @@
 <center class="half">
     <img src="./pic/38.jpg" width="400"/>
 </center>
+
+# 致谢
+感谢 MickeyMi 请我喝咖啡！
