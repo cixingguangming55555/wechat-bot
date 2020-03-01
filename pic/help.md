@@ -1,15 +1,15 @@
 
 # Change Log
 ## version 1.5.1.53(2020-03-01)
-new feature:#7
-enhanced:
-1、pic msg optimized
-2、txt msg optimized
-3、user list msg optimized
+new feature:#7  
+enhanced:  
+1、pic msg optimized  
+2、txt msg optimized  
+3、user list msg optimized  
 
 ## version 1.2.1.52(2020-02-28)
-new feature:get chatroom member list
-bugfix:random carsh(#6)
+new feature:get chatroom member list  
+bugfix:random carsh(#6)  
 
 ## version 1.1.1.51(2020-02-27)
 new feature:send at msg
