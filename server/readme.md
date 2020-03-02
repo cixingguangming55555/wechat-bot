@@ -6,7 +6,7 @@
 2、client目录  客户端程序
 ## 环境准备
 1、必须是微信PC  
-2、版本必须是2.8.0.121，[微信2.8.0.121传送门](https://pan.baidu.com/s/1LoV9wc1XaJMX1O6uLcxq1Q "微信2.7.1.88传送门"),提取码：pw1y
+2、版本必须是2.8.0.121，[微信2.8.0.121传送门](https://pan.baidu.com/s/1LoV9wc1XaJMX1O6uLcxq1Q "微信2.8.0.121传送门"),提取码：d96z
 ## 启动微信
 1、请在windows下启动PC微信，并成功登录
 ## 开启服务端
