@@ -1,5 +1,12 @@
 
 # Change Log
+## version version 2.2.2.56
+new feature:  
+#10   
+#12  
+enhanced:  
+#11
+
 ## version 2.0.1.55(2020-03-02)
 new feature:wechat urgrade to 2.8.0.121  
 bugfix:#9  
