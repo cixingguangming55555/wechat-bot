@@ -2,10 +2,10 @@
 # Change Log
 ## version version 2.2.2.56
 new feature:  
-#10   
-#12  
+#10   get personal infomation
+#12   debug switch
 enhanced:  
-#11
+#11 catch more exception
 
 ## version 2.0.1.55(2020-03-02)
 new feature:wechat urgrade to 2.8.0.121  
