@@ -12,9 +12,6 @@
   <a href="https://github.com/xiaozhu188/electron-vue-cloud-music/blob/master/LICENSE">
     <img src="https://img.shields.io/github/v/release/cixingguangming55555/wechat-bot?include_prereleases" alt="license">
   </a>
-  <a href="https://github.com/cixingguangming55555/wechat-bot/releases">
-    <img src="https://img.shields.io/github/v/release/xiaozhu188/electron-vue-cloud-music.svg?style=flat-square" alt="release">
-  </a>
 </p>
 
 # 贡献
