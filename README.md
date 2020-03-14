@@ -1,6 +1,7 @@
 # wechat-bot  馈人玫瑰之手，历久犹有余香
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
 点整包下载或release，下载最新版本  
+
 <p align="center">
   <a href="https://github.com/feross/standard">
     <img src="https://img.shields.io/badge/code%20style-standard-green.svg?style=flat-square" alt="standard code">
@@ -18,6 +19,7 @@
     <img src="https://www.travis-ci.org/xiaozhu188/electron-vue-cloud-music.svg?branch=master" alt="travis">
   </a>
 </p>
+
 # 贡献
 感谢 MickeyMi 贡献JAVA客户端代码
 # 版本
