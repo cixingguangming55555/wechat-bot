@@ -9,7 +9,7 @@
   <a href="https://github.com/xiaozhu188/electron-vue-cloud-music/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/xiaozhu188/electron-vue-cloud-music.svg" alt="license">
   </a>
-  <a href="https://github.com/xiaozhu188/electron-vue-cloud-music/releases">
+  <a href="https://github.com/cixingguangming55555/wechat-bot/releases">
     <img src="https://img.shields.io/github/v/release/xiaozhu188/electron-vue-cloud-music.svg?style=flat-square" alt="release">
   </a>
   <a href="https://github.com/xiaozhu188/electron-vue-cloud-music/releases/latest">
