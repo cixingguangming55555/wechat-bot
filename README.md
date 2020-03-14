@@ -18,9 +18,6 @@
   <a href="https://github.com/xiaozhu188/electron-vue-cloud-music/releases/latest">
     <img src="https://img.shields.io/github/downloads/xiaozhu188/electron-vue-cloud-music/total.svg?style=flat-square" alt="">
   </a>
-  <a href="https://travis-ci.org/xiaozhu188/electron-vue-cloud-music/builds">
-    <img src="https://www.travis-ci.org/xiaozhu188/electron-vue-cloud-music.svg?branch=master" alt="travis">
-  </a>
 </p>
 
 # 贡献
