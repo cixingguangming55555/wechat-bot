@@ -1,6 +1,9 @@
 # wechat-bot  馈人玫瑰之手，历久犹有余香
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
 点整包下载或release，下载最新版本  
+<p align="center">
+  <img src="./pic/github_logo.png" width="120">
+</p>
 
 <p align="center">
   <a href="https://github.com/feross/standard">
