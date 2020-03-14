@@ -6,10 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/feross/standard">
-    <img src="https://img.shields.io/badge/code%20style-standard-green.svg?style=flat-square" alt="standard code">
-  </a>
-  <a href="https://github.com/cixingguangming55555/wechat-bot/blob/master/LICENSE">
+   <a href="https://github.com/cixingguangming55555/wechat-bot/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/cixingguangming55555/wechat-bot" alt="GitHub">
   </a>
   <a href="https://github.com/cixingguangming55555/wechat-bot/releases">
