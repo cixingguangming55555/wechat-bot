@@ -60,8 +60,6 @@
 1、C++客户端  
 2、JS客户端  
 3、其他无（大家可以贡献java\python\等客户端代码）  
-# License
-[GPL](https://opensource.org/licenses/GPL-3.0)
 # 交流
 请扫码微信加好友，到时我会拉入群，备注：bot。空了我会处理的。
 
