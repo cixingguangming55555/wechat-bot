@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/code%20style-standard-green.svg?style=flat-square" alt="standard code">
   </a>
   <a href="https://github.com/xiaozhu188/electron-vue-cloud-music/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/xiaozhu188/electron-vue-cloud-music.svg" alt="license">
+    <img src="https://img.shields.io/github/v/release/cixingguangming55555/wechat-bot?include_prereleases" alt="license">
   </a>
   <a href="https://github.com/cixingguangming55555/wechat-bot/releases">
     <img src="https://img.shields.io/github/v/release/xiaozhu188/electron-vue-cloud-music.svg?style=flat-square" alt="release">
