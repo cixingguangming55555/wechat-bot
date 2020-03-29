@@ -1,6 +1,9 @@
 
 # Change Log
-## version version 2.2.2.56
+## version 2.3.2.56(2020-03-29)
+new feature:  
+#20 get nickname of chatroom member  
+## version 2.2.2.56(2020-03-05)
 new feature:  
 #10   get personal infomation  
 #12   debug switch  
