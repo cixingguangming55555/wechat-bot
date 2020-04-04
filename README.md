@@ -57,7 +57,7 @@
 请扫码微信加好友，到时我会拉入群，备注：bot。空了我会处理的。
 
 <center class="half">
-    <img src="./pic/qrcode.jpg" width="400"/>
+    <img src="http://q89udkp2g.bkt.clouddn.com/qrcode.jpg" width="400"/>
 </center>
 
 # 请我喝咖啡
