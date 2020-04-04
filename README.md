@@ -63,7 +63,7 @@
 # 请我喝咖啡
 
 <center class="half">
-    <img src="./pic/38.jpg" width="400"/>
+    <img src="./pic/39.jpg" width="800"/>
 </center>
 
 # 致谢
