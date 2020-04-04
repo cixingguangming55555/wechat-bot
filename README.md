@@ -70,5 +70,5 @@
 感谢 MickeyMi 请我喝咖啡！  
 感谢 vluoyue（罗月）请我喝咖啡！  
 感谢 TedWang（微信） 请我喝咖啡！  
-感谢 Frank(微信）  请我喝咖啡！
+感谢 Frank(微信）  请我喝咖啡！  
 感谢 doxsen(微信） 请我喝咖啡！
