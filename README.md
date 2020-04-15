@@ -15,7 +15,8 @@
 </p>
 
 # 贡献
-感谢 MickeyMi 贡献JAVA客户端代码
+感谢 MickeyMi 贡献JAVA客户端代码  
+感谢 ToBin    共享JAVA客户端代码
 # 微信版本
 微信:2.8.0.121  
 # 开源
