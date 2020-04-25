@@ -1,20 +1,20 @@
 
 # Change Log
-## version 2.3.4.60（2020-04-25)
+## version 2.5.4.60（2020-04-25)
 bugfix:  
 #31  
 #33  
 enhanced:  
 #34  
 
-## version 2.3.3.58(2020-04-13)
+## version 2.5.3.58(2020-04-13)
 bugfix:  
 #23  
 #24  
-## version2.3.3.56（2020-04-04)
+## version2.5.3.56（2020-04-04)
 bugfix:#22
 
-## version 2.3.2.56(2020-03-29)
+## version 2.5.2.56(2020-03-29)
 new feature:  
 #20 get nickname of chatroom member  
 ## version 2.2.2.56(2020-03-05)
