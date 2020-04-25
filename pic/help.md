@@ -1,5 +1,12 @@
 
 # Change Log
+## version 2.3.4.60（2020-04-25)
+bugfix:
+#31  
+#33  
+enhanced:  
+#34  
+
 ## version 2.3.3.58(2020-04-13)
 bugfix:  
 #23  
