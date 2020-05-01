@@ -1,5 +1,10 @@
-
 # Change Log
+
+## version 2.5.4.63(2020-05-01)
+### Bug Fixes
+* 获取某个群的昵称列表时微信主程序崩溃,closes #32
+* get the nickname can cause the program to crash,closes #37
+
 ## version 2.5.4.61(2020-04-27)
 bugfix:  
 #32  
