@@ -22,7 +22,7 @@
 # 开源
 * [2.7.1.88内存获取用户信息](userlist.cpp)
 # 整包下载
-[整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/2.5.4.62.zip)
+[整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/2.6.4.63.zip)
 # 文档
 [开发文档](https://www.showdoc.cc/wechatbot)
 # 声明
@@ -40,7 +40,8 @@
 5、发送AT消息  
 6、获取chatroom成员列表(wxid)和昵称  
 7、获取个人微信信息  
-8、其它根据需求增加  
+8、接收图片并存储到本地(默认路径:c:\temp\wechat)  
+9、其它根据需求增加  
 # FAQ
 [问题帮助](./pic/help1.md)
 # 注意
