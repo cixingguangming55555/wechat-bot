@@ -1,4 +1,9 @@
 # Change Log
+## version 2.6.4.63(2020-05-02)
+## Bug Fixes
+* op:personal info is no return,closes #38
+## Feature
+* receive the pic,closes #25
 
 ## version 2.5.4.62(2020-05-01)
 ### Bug Fixes
