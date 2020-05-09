@@ -22,7 +22,7 @@
 # 开源
 * [2.7.1.88内存获取用户信息](userlist.cpp)
 # 整包下载
-[整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/2.6.4.63.zip)
+[整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/2.6.5.65.zip)
 # 文档
 [开发文档](https://www.showdoc.cc/wechatbot)
 # 声明
