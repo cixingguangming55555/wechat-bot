@@ -2,7 +2,7 @@
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
 点整包下载或release，下载最新版本  
 <p align="center">
-  <img src="http://q89udkp2g.bkt.clouddn.com/github_logo.png" width="120">
+  <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
 </p>
 
 <p align="center">
@@ -59,13 +59,13 @@
 请扫码微信加好友，到时我会拉入群，备注：bot。空了我会处理的。
 
 <center class="half">
-    <img src="http://q89udkp2g.bkt.clouddn.com/qrcode.jpg" width="400"/>
+    <img src="https://i.loli.net/2020/05/09/3m9cRatry4gNnqH.jpg" width="400"/>
 </center>
 
 # 请我喝咖啡
 
 <center class="half">
-    <img src="http://q89udkp2g.bkt.clouddn.com/38recv.jpg" width="800"/>
+    <img src="https://i.loli.net/2020/05/09/bPkaXrnVyzl6ewH.jpg" width="800"/>
 </center>
 
 # 致谢
