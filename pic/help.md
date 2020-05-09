@@ -1,8 +1,8 @@
 # Change Log
 ## version 2.6.4.65(2020-05-09)
 ### Bug Fixes
-* 群聊记录中wxid和sender填反的问题,closes #41
-  更改了消息体里面的wxid为receiver
+* 群聊记录中wxid和sender填反的问题,closes #41  
+  更改了消息体里面的wxid为receiver  
 * 微信发送消息失败 ,closes #21
 
 ## version 2.6.4.63(2020-05-02)
