@@ -22,7 +22,7 @@
 # 开源
 * [2.7.1.88内存获取用户信息](userlist.cpp)
 # 整包下载
-[整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/2.6.5.65.zip)
+[整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/2.8.5.65.zip)
 # 文档
 [开发文档](https://www.showdoc.cc/wechatbot)
 # 声明
@@ -32,8 +32,8 @@
 4、持续升级  
 5、永久免费   
 # DLL功能
-0、DLL带websocket服务，所有操作均通过websocket客户端进行  
-1、客户端发送好友文本消息  
+0、DLL带websocket和HTTP服务，所有操作均通过websocket客户端和HTTP客户端进行  
+1、客户端发送好友文本消息（支持websocket和HTTP）    
 2、客户端获取通讯录好友wxid和名字  
 3、客户端接收微信收到的文本消息  
 4、客户端发送图片给好友  
