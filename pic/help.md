@@ -1,5 +1,9 @@
 # Change Log
-## version 2.6.4.65(2020-05-09)
+## version 2.8.5.65(2020-05-10)
+### Feature
+* http support,closes #35
+* send the text message via http,#43
+## version 2.6.5.65(2020-05-09)
 ### Bug Fixes
 * 群聊记录中wxid和sender填反的问题,closes #41  
   更改了消息体里面的wxid为receiver  
