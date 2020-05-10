@@ -45,6 +45,7 @@
 # FAQ
 [问题帮助](./pic/help1.md)
 # 注意
+请参见client.js（websocket客户端）和httpclient.js（http客户端）示例代码   
 注入一次即可，如要重新注入，请退出微信，重新启动微信后再注入  
 发送文本消息时，需要先获取通讯录好友wxid和名字  
 群ID是以@chatroom结尾的  
