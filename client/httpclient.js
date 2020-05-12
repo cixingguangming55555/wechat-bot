@@ -19,7 +19,23 @@ function getid()
    const id = Date.now();
    return id.toString();
 }
-async function  httptest()
+async function get_contact_list()
+{
+    const options={
+        url: url+'/api/getcontactlistqq'
+    };
+    let data = await rp(options);
+    const j = JSON.parse(data);
+    
+    //console.log(j.id); 
+    //console.log(j.status);
+    return j;
+
+}
+/**
+ * send txt message
+ */
+async function sendtxt()
 {
     const options =
       {
@@ -46,7 +62,7 @@ async function  httptest()
 
 async function main()
 {
-    const j = await httptest();
+    const j = await get_contact_list();
     console.log(j);
 }
 
