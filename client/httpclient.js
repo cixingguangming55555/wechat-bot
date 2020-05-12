@@ -22,7 +22,7 @@ function getid()
 async function get_contact_list()
 {
     const options={
-        url: url+'/api/getcontactlistqq'
+        url: url+'/api/getcontactlist'
     };
     let data = await rp(options);
     const j = JSON.parse(data);
