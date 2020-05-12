@@ -1,4 +1,7 @@
 # Change Log
+## version 2.9.7.66(2020-05-12)
+### Feature
+* get the contact list via http ,closes #47
 ## version 2.8.7.66(2020-05-12)
 ### Bug Fixes
 * the sender or receiver is incomplete when receive the pic,closes #44
