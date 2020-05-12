@@ -1,4 +1,10 @@
 # Change Log
+## version 2.8.7.66(2020-05-12)
+### Bug Fixes
+* the sender or receiver is incomplete when receive the pic,closes #44
+### enhancement
+* 新增自动通过新朋友申请接口，能获取新朋友的用户信息,closes #40
+* the sender or receiver is incomplete when receive the text message，closes #45
 ## version 2.8.5.65(2020-05-10)
 ### Feature
 * http support,closes #35
