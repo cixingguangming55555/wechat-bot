@@ -37,9 +37,9 @@
 1、客户端发送好友文本消息（支持websocket和HTTP）    
 2、客户端获取通讯录好友wxid和名字(支持websocket和HTTP)  
 3、客户端接收微信收到的文本消息  
-4、客户端发送图片给好友  
-5、发送AT消息  
-6、获取chatroom成员列表(wxid)和昵称  
+4、客户端发送图片给好友（支持websocket和HTTP）   
+5、发送AT消息（支持websocket和HTTP）  
+6、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）  
 7、获取个人微信信息  
 8、接收图片并存储到本地(默认路径:c:\temp\wechat)  
 9、其它根据需求增加  
