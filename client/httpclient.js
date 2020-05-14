@@ -19,6 +19,104 @@ function getid()
    const id = Date.now();
    return id.toString();
 }
+async function send_at_msg()
+{
+    const options =
+      {
+          //method: 'GET',
+          //url: 'https://apis.map.qq.com/ws/district/v1/list',
+          url: url+'/api/sendatmsg',
+          qs:
+          {
+              id: getid(),
+              type: AT_MSG,
+              roomid: '23023281066@chatroom',//the chatroom 
+              wxid:'the wxid who you  want to send',
+              content: '今天过来一起喝酒！同时，我们也发现',
+              nick:'[微笑]Python'
+          }
+      };
+      let data = await rp(options);
+      const j = JSON.parse(data);
+      
+      //console.log(j.id); 
+      //console.log(j.status);
+      return j;
+
+
+}
+/**send_pic
+ *  发送图片
+ */
+async function send_pic()
+{
+    const options =
+      {
+          //method: 'GET',
+          //url: 'https://apis.map.qq.com/ws/district/v1/list',
+          url: url+'/api/sendpic',
+          qs:
+          {
+              id: getid(),
+              type: PIC_MSG,
+              wxid: 'filehelper',
+              path: 'C:\\Users\\14988\\Desktop\\temp\\2.jpg'
+          }
+      };
+      let data = await rp(options);
+      const j = JSON.parse(data);
+      
+      //console.log(j.id); 
+      //console.log(j.status);
+      return j;
+
+
+}
+
+/**get_member_nick
+ * 获取群成员昵称
+ */
+
+async function get_member_nick()
+{
+    //getmembernick
+    const options =
+      {
+          
+          url: url+'/api/getmembernick',
+          qs:
+          {
+              id: getid(),
+              type: CHATROOM_MEMBER_NICK,
+              roomid: '17339716569@chatroom'//1280641435@chatroom
+          }
+      };
+    const data = await rp(options);
+    const j = JSON.parse(data);
+    
+    //console.log(j.id); 
+    //console.log(j.status);
+    return j;
+}
+/**get_getmemberid
+ *   获取群成员id
+ */
+async function get_memberid()
+{
+    const options={
+        url: url+'/api/getmemberid'
+    };
+    let data = await rp(options);
+    const j = JSON.parse(data);
+    
+    //console.log(j.id); 
+    //console.log(j.status);
+    return j;
+}
+
+/**get_contact_list  获取好友和群列表
+ * 
+ */
 async function get_contact_list()
 {
     const options={
@@ -46,7 +144,7 @@ async function sendtxt()
           {
               id: getid(),
               type: TXT_MSG,
-              wxid: 'zhanghua_cd',
+              wxid: 'filehelper',
               content: '今天我寒夜里看学飘过2338？？&&2222！'
           }
       };
@@ -62,7 +160,10 @@ async function sendtxt()
 
 async function main()
 {
-    const j = await get_contact_list();
+    //const j = await get_contact_list();
+    //const j = await get_memberid();
+    //const j = await get_member_nick();
+    const j = await send_at_msg();
     console.log(j);
 }
 
