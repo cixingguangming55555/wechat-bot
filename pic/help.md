@@ -1,4 +1,11 @@
 # Change Log
+## version 3.3.7.66(2020-5-14)
+### Feature
+* send the pic via http feature,closes #48
+* get the member id from chatroom,closes #49
+* get the nick of chatroom member,closes #50
+* send the at msg via http ,closes #51
+
 ## version 2.9.7.66(2020-05-12)
 ### Feature
 * get the contact list via http ,closes #47
