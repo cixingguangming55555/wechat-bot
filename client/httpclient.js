@@ -157,13 +157,41 @@ async function sendtxt()
 
 
 }
+/**send_attatch
+ * send the attatchment
+ */
+async function send_attatch()
+{
+    const options =
+      {
+          //method: 'GET',
+          //url: 'https://apis.map.qq.com/ws/district/v1/list',
+          url: url+'/api/sendattatch',
+          qs:
+          {
+              id: getid(),
+              //type: TXT_MSG,
+              wxid: '23023281066@chatroom',
+              filepath: 'C:\\temp\\wechat.txt'
+          }
+      };
+      let data = await rp(options);
+      const j = JSON.parse(data);
+      
+      //console.log(j.id); 
+      //console.log(j.status);
+      return j;
+
+
+}
 
 async function main()
 {
     //const j = await get_contact_list();
     //const j = await get_memberid();
     //const j = await get_member_nick();
-    const j = await send_at_msg();
+    //const j = await send_at_msg();
+    const j = await send_attatch();
     console.log(j);
 }
 
