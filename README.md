@@ -25,7 +25,7 @@
 # 开源
 * [2.7.1.88内存获取用户信息](userlist.cpp)
 # 整包下载
-[整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/3.3.7.66.zip)
+[整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/3.4.7.66.zip)
 # 文档
 [开发文档](https://www.showdoc.cc/wechatbot)
 # 声明
@@ -41,10 +41,11 @@
 3、客户端接收微信收到的文本消息  
 4、客户端发送图片给好友（支持websocket和HTTP）   
 5、发送AT消息（支持websocket和HTTP）  
-6、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）  
-7、获取个人微信信息  
-8、接收图片并存储到本地(默认路径:c:\temp\wechat)  
-9、其它根据需求增加  
+6、发送附件（仅支持HTTP)   
+7、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）  
+8、获取个人微信信息  
+9、接收图片并存储到本地(默认路径:c:\temp\wechat)  
+10、其它根据需求增加  
 # FAQ
 [问题帮助](./pic/help1.md)
 # 注意
