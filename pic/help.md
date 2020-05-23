@@ -1,4 +1,8 @@
 # Change Log
+## version 3.4.7.66(2020-05-24)
+### Feature
+* 希望可以增加发送文件的功能,closes #28
+
 ## version 3.3.7.66(2020-5-14)
 ### Feature
 * send the pic via http feature,closes #48
