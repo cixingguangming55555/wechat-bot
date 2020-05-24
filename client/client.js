@@ -19,18 +19,35 @@ const CHATROOM_MEMBER_NICK = 5020;
 const PERSONAL_INFO = 6500;
 const DEBUG_SWITCH = 6000;
 const PERSONAL_DETAIL =6550;
+const DESTROY_ALL = 9999;
+
+
 
 function getid()
 {
    const id = Date.now();
    return id.toString();
 }
+function get_chat_nick_p(roomid)
+{
+  const j={
+    id:getid(),
+    type:CHATROOM_MEMBER_NICK,
+    content:roomid,//chatroom id 23023281066@chatroom  17339716569@chatroom
+    //5325308046@chatroom
+    //5629903523@chatroom
+    wxid:'ROOT'
+  };
+  const s= JSON.stringify(j);
+  return s;
+
+}
 function get_chat_nick()
 {
   const j={
     id:getid(),
     type:CHATROOM_MEMBER_NICK,
-    content:'5325308046@chatroom',//chatroom id 23023281066@chatroom  17339716569@chatroom
+    content:'17339716569@chatroom',//chatroom id 23023281066@chatroom  17339716569@chatroom
     //5325308046@chatroom
     //5629903523@chatroom
     wxid:'ROOT'
@@ -50,16 +67,28 @@ function debug_switch()
    return s;
 
 }
+function handle_nick(j){
+    const data = j.content;
+    let i = 0;
+    for(const item of data)
+    {
+        console.log(i++,item.nickname)
+    }
+}
 function handle_memberlist(j)
 {
    const data = j.content;
+   let i =0;
+   //get_chat_nick_p(j.roomid);
    for(const item of data)
    {
-      console.log("------"+item.roomid+"--------");
-      const memberlist=item.member;
+      console.log(i++,item.roomid);  
+    //console.log("------"+item.roomid+"--------");
+      //ws.send(get_chat_nick_p(item.roomid));
+      //const memberlist=item.member;
       //const len = nicklist.length();
       //console.log(len);
-      for(const m of memberlist)
+      //for(const m of memberlist)
       {
           //console.log(m);//获得每个成员的wxid
       }
@@ -94,6 +123,20 @@ function send_at_msg()
   
   const s = JSON.stringify(j);
   return s;
+}
+function destroy_all()
+{
+  const j={
+    id:getid(),
+    type:DESTROY_ALL,
+    content:'none',
+    //wxid:'22428457414@chatroom'
+    wxid:'none'
+  };
+  
+  const s = JSON.stringify(j);
+  console.log(s);
+  return s; 
 }
 function send_pic_msg()
 {
@@ -170,9 +213,18 @@ function send_wxuser_list()
 function handle_wxuser_list(j)
 {
    const j_ary = j.content;
+   var i = 0;
    for(const item of j_ary)
    {
-      console.log(item.wxid,item.name);
+      i=i+1;
+      const id = item.wxid;
+      const m = id.match(/@/);
+      if(m!=null){
+        //console.log(id);
+        console.log(i,item.wxid,item.name);
+      }
+      //console.log(m);
+      //
    }
 }
 /**
@@ -199,7 +251,14 @@ function heartbeat(j)
 }
 ws.on('open', function open() 
 {
-  ws.send(get_chat_nick());
+  ws.send(destroy_all());
+  //ws.send(get_chat_nick_p("19461204835@chatroom"));
+  //for(const item of roomid_list)
+  //{
+    //console.log(item);
+    //ws.send(get_chat_nick_p(item));
+  //}
+  //ws.send(get_chat_nick());
   //ws.send(get_personal_info());
   //ws.send(send_pic_msg());
   //ws.send(send_txt_msg());
@@ -265,7 +324,8 @@ ws.on('message', function incoming(data)
   switch(type)
   {
     case CHATROOM_MEMBER_NICK:
-      console.log(j);
+      //console.log(j);
+      handle_nick(j);
       break;
     case PERSONAL_DETAIL:
       console.log(j);
@@ -286,7 +346,7 @@ ws.on('message', function incoming(data)
       console.log(j);
       break;
     case CHATROOM_MEMBER:
-      console.log(j);
+      //console.log(j);
       handle_memberlist(j);
       break;
     case RECV_PIC_MSG:
