@@ -45,7 +45,8 @@
 7、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）  
 8、获取个人微信信息  
 9、接收图片并存储到本地(默认路径:c:\temp\wechat)  
-10、其它根据需求增加  
+10、动态卸载DLL（支持HTTP和websocket)   
+11、其它根据需求增加  
 # FAQ
 [问题帮助](./pic/help1.md)
 # 注意
