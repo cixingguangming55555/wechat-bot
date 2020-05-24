@@ -181,8 +181,28 @@ async function send_attatch()
       //console.log(j.id); 
       //console.log(j.status);
       return j;
+}
 
-
+async function send_destroy()
+{
+    const options =
+      {
+          //method: 'GET',
+          //url: 'https://apis.map.qq.com/ws/district/v1/list',
+          url: url+'/api/destroy',
+          qs:
+          {
+              id: getid(),
+              wxid: 'null',
+              content: 'null'
+          }
+      };
+      let data = await rp(options);
+      const j = JSON.parse(data);
+      
+      //console.log(j.id); 
+      //console.log(j.status);
+      return j;
 }
 
 async function main()
@@ -191,8 +211,9 @@ async function main()
     //const j = await get_memberid();
     //const j = await get_member_nick();
     //const j = await send_at_msg();
-    const j = await send_attatch();
-    console.log(j);
+    //const j = await send_attatch();
+    //console.log(j);
+    await send_destroy();
 }
 
 //console.log('test');
