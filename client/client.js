@@ -251,7 +251,7 @@ function heartbeat(j)
 }
 ws.on('open', function open() 
 {
-  ws.send(destroy_all());
+  //ws.send(destroy_all());
   //ws.send(get_chat_nick_p("19461204835@chatroom"));
   //for(const item of roomid_list)
   //{
