@@ -183,6 +183,27 @@ async function send_attatch()
       return j;
 }
 
+async function refresh_memberlist()
+{
+    const options =
+      {
+          //method: 'GET',
+          //url: 'https://apis.map.qq.com/ws/district/v1/list',
+          url: url+'/api/refresh_chatroom',
+          qs:
+          {
+              id: getid(),
+              wxid: 'null',
+              content: 'null'
+          }
+      };
+      let data = await rp(options);
+      const j = JSON.parse(data);
+      
+      //console.log(j.id); 
+      //console.log(j.status);
+      return j;
+}
 async function send_destroy()
 {
     const options =
@@ -213,7 +234,8 @@ async function main()
     //const j = await send_at_msg();
     //const j = await send_attatch();
     //console.log(j);
-    await send_destroy();
+    //await send_destroy();
+    await refresh_memberlist();
 }
 
 //console.log('test');
