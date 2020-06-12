@@ -18,7 +18,8 @@
 感谢 MickeyMi 贡献JAVA客户端代码  
 感谢 ToBin    共享JAVA客户端代码  
 感谢 诺阳     贡献C#客户端代码  
-感谢 昆明-C#-SakuraYuki 贡献C#客户端代码   
+感谢 昆明-C#-SakuraYuki 贡献C#客户端代码  
+感谢 【java客户端】( https://github.com/Yangself666/WeChat-Bot-Client)
 # 微信版本
 微信:[2.8.0.121](https://pan.baidu.com/s/1jrW2HzBxM8wceZRn8hT5UQ)   
 提取码:ye2w   
