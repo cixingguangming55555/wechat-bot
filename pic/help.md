@@ -1,4 +1,7 @@
 # Change Log
+## version 4.5.7.71(2020-10-18)
+### Bug Fixes
+* #71
 ## version 4.5.7.70(2020-08-19)
 ### Bug Fixes
 * new friend request msg
