@@ -75,12 +75,6 @@
     <img src="https://i.loli.net/2020/05/09/3m9cRatry4gNnqH.jpg" width="400"/>
 </center>
 
-# 请我喝咖啡
-
-<center class="half">
-    <img src="https://i.loli.net/2020/05/09/bPkaXrnVyzl6ewH.jpg" width="800"/>
-</center>
-
 # 致谢
 感谢 MickeyMi 请我喝咖啡！  
 感谢 vluoyue（罗月）请我喝咖啡！  
