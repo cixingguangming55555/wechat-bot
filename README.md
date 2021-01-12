@@ -1,9 +1,9 @@
-# 代码在分支里面，3.1.0.66
+# 代码在分支里面，version:3.1.0.66
 * 正在完善
 # wechat-bot  馈人玫瑰之手，历久犹有余香
 目前支持微信2.9.0.123   
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
-点整包下载或release，下载最新版本  
+点整包下载或release，下载最新版本  version:
 <p align="center">
   <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
 </p>
