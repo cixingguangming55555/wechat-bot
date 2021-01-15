@@ -1,5 +1,6 @@
 # 代码在分支里面，version:3.1.0.66
-* 正在完善
+* 代码：https://github.com/cixingguangming55555/wechat-bot/tree/feature-framework
+* 功能：获取通讯录好友wxid,名字；接收文本消息；发送文本消息（客户端代码参加client.js）
 # wechat-bot  馈人玫瑰之手，历久犹有余香
 目前支持微信2.9.0.123   
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
