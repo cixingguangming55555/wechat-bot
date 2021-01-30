@@ -9,7 +9,7 @@
 * 获取个人微信信息;
 * 获取微信群id和群成员id;
 * 获取群成员昵称，用如下代码，带wxid和roomid,单个获取
-···
+```
 function get_chat_nick_p(wx_id,roomid)
 {
   const j={
@@ -21,7 +21,7 @@ function get_chat_nick_p(wx_id,roomid)
   const s= JSON.stringify(j);
   return s;
 }
-···
+```
 * 注：目前只支持ws，接口代码和原有2.9的基本一致，客户端代码参加client.js，变化部分请看消息体，有问题请及时群里沟通
 ## 注意
 * 3.1.0.66功能少，代码有重构，稳定性未知，请酌情选用
