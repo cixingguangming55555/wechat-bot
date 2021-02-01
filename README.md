@@ -26,7 +26,7 @@ function get_chat_nick_p(wx_id,roomid)
 ## 注意
 * 3.1.0.66功能少，代码有重构，稳定性未知，请酌情选用
 # wechat-bot  馈人玫瑰之手，历久犹有余香
-目前支持微信2.9.0.123   
+目前支持微信3.1.0.66   
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
 点整包下载或release，下载最新版本  version:
 <p align="center">
