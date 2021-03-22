@@ -56,7 +56,7 @@ function get_chat_nick_p(wx_id,roomid)
 提取码:ye2w   
 微信:[2.9.0.123](https://pan.baidu.com/s/1zRJzwlZ1r8aRBeEc0lg1sw)   
 提取码：j4m0   
-微信：[3.0.1.66](https://pan.baidu.com/s/1HKl7sA61KqCCBo-jGR_R-w)  
+微信：[3.1.0.66](https://pan.baidu.com/s/1HKl7sA61KqCCBo-jGR_R-w)  
 提前码: nf77  
 # 开源
 * [2.7.1.88内存获取用户信息](userlist.cpp)
