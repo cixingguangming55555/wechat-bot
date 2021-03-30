@@ -14,7 +14,8 @@
     <img src="https://img.shields.io/github/v/release/cixingguangming55555/wechat-bot?include_prereleases" alt="license">
   </a>
 </p>
-
+# 重要
+* 请看client.js和httpjs代码
 # 贡献
 
 感谢 MickeyMi 贡献JAVA客户端代码  
@@ -36,6 +37,7 @@
 提前码: cscn  
 # 开源
 * [2.7.1.88内存获取用户信息](userlist.cpp)
+* [3.1.0.66]https://github.com/cixingguangming55555/wechat-bot/tree/feature-framework
 # 整包下载
 [整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/4.5.7.73.zip)
 # 文档
