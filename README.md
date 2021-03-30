@@ -41,6 +41,7 @@
 [整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/4.5.7.73.zip)
 # 文档
 * 请看client目录下client.js和httpjs代码  
+* 微信3.2.1.121的客户端，请参加client-3.2.1.121.js和http-3.2.1.121.js
 # 声明
 1、请大家在国家法律、法规和腾讯相关原则下使用  
 2、不对任何下载和使用者的任何行为负责  
