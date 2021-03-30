@@ -1,4 +1,6 @@
 # Change Log
+## version 4.5.7.78(2021-3-30)
+### wechat urgrade to 3.2.1.121 
 ## version 4.5.7.73(2020-12-11)
 ### Bug Fixes
 * #80
