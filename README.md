@@ -14,8 +14,7 @@
     <img src="https://img.shields.io/github/v/release/cixingguangming55555/wechat-bot?include_prereleases" alt="license">
   </a>
 </p>
-# 重要
-* 请看client.js和httpjs代码  
+
 # 贡献
 
 感谢 MickeyMi 贡献JAVA客户端代码  
@@ -41,7 +40,7 @@
 # 整包下载
 [整包下载](https://github.com/cixingguangming55555/wechat-bot/archive/4.5.7.73.zip)
 # 文档
-[开发文档](https://www.showdoc.cc/wechatbot)
+* 请看client目录下client.js和httpjs代码  
 # 声明
 1、请大家在国家法律、法规和腾讯相关原则下使用  
 2、不对任何下载和使用者的任何行为负责  
