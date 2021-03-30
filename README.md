@@ -1,3 +1,8 @@
+# 重要备份
+* 考虑到github慢和一些其它因素，增加一个备份，可以通过:menu方式获取。先扫码：
+<p align="center">
+  <img src="./pic/qrcode_for_gh_404dcb4ed705_258.jpg" width="120">
+</p>
 # wechat-bot  馈人玫瑰之手，历久犹有余香
 目前支持微信3.2.1.121  
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
