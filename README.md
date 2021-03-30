@@ -1,32 +1,5 @@
-# 代码在分支里面，version:3.1.0.66
-## 代码
-* https://github.com/cixingguangming55555/wechat-bot/tree/feature-framework
-## 功能
-* 获取通讯录好友wxid,名字；
-* 接收文本消息；
-* 发送文本消息;
-* 发送图片；
-* 获取个人微信信息;
-* 获取微信群id和群成员id;
-* 获取群成员昵称，用如下代码，带wxid和roomid,单个获取
-```
-function get_chat_nick_p(wx_id,roomid)
-{
-  const j={
-    id:getid(),
-    type:CHATROOM_MEMBER_NICK,
-    content:roomid,//chatroom id 23023281066@chatroom  17339716569@chatroom
-    wxid:wx_id
-  };
-  const s= JSON.stringify(j);
-  return s;
-}
-```
-* 注：目前只支持ws，接口代码和原有2.9的基本一致，客户端代码参加client.js，变化部分请看消息体，有问题请及时群里沟通
-## 注意
-* 3.1.0.66功能少，代码有重构，稳定性未知，请酌情选用
 # wechat-bot  馈人玫瑰之手，历久犹有余香
-目前支持微信3.1.0.66   
+目前支持微信3.2.1.121  
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
 点整包下载或release，下载最新版本  version:
 <p align="center">
@@ -59,6 +32,8 @@ function get_chat_nick_p(wx_id,roomid)
 提取码：j4m0   
 微信：[3.1.0.66](https://pan.baidu.com/s/1HKl7sA61KqCCBo-jGR_R-w)  
 提前码: nf77  
+微信：[3.2.1.121](https://pan.baidu.com/s/1IHRM2OMvrLyuCz5MRbigGg)  
+提前码: cscn  
 # 开源
 * [2.7.1.88内存获取用户信息](userlist.cpp)
 # 整包下载
@@ -78,12 +53,8 @@ function get_chat_nick_p(wx_id,roomid)
 3、客户端接收微信收到的文本消息  
 4、客户端发送图片给好友（支持websocket和HTTP）   
 5、发送AT消息（支持websocket和HTTP）  
-6、发送附件（仅支持HTTP)   
-7、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）  
-8、获取个人微信信息  
-9、接收图片并存储到本地(默认路径:c:\temp\wechat)  
-10、动态卸载DLL（支持HTTP和websocket)   
-11、其它根据需求增加  
+6、发送附件（仅支持HTTP,weboscket)   
+7、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）   
 # FAQ
 [问题帮助](./pic/help1.md)
 # 注意
