@@ -22,7 +22,7 @@
 </p>
 
 # 贡献
-感谢 UoUoio 贡献[java客户端UoUoiogithub地址3.2.1.121](https://github.com/UoUoio/WechatBot)  
+感谢 UoUoio 贡献[java客户端  UoUoio  github地址 3.2.1.121](https://github.com/UoUoio/WechatBot)  
 感谢 MickeyMi 贡献JAVA客户端代码  
 感谢 ToBin    共享JAVA客户端代码  
 感谢 诺阳     贡献C#客户端代码  
