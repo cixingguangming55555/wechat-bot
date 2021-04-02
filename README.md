@@ -1,7 +1,7 @@
 # 重要备份
 * 考虑到github慢和一些其它因素，增加一个备份，可以输入:menu方式获取。先扫码：
 <p align="center">
-  <img src="https://sm.ms/image/7QScLE6VOd195nP" width="120">
+  <img src="https://i.loli.net/2021/04/02/7QScLE6VOd195nP.jpg" width="120">
 </p>
 # wechat-bot  馈人玫瑰之手，历久犹有余香
 目前支持微信3.2.1.121  
