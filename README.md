@@ -37,9 +37,9 @@
 微信:[2.9.0.123](https://pan.baidu.com/s/1zRJzwlZ1r8aRBeEc0lg1sw)   
 提取码：j4m0   
 微信：[3.1.0.66](https://pan.baidu.com/s/1HKl7sA61KqCCBo-jGR_R-w)  
-提前码: nf77  
+提取码: nf77  
 微信：[3.2.1.121](https://pan.baidu.com/s/1IHRM2OMvrLyuCz5MRbigGg)  
-提前码: cscn  
+提取码: cscn  
 # 开源
 * [2.7.1.88内存获取用户信息](userlist.cpp)
 * [3.1.0.66]https://github.com/cixingguangming55555/wechat-bot/tree/feature-framework
