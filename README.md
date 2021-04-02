@@ -30,7 +30,7 @@
 感谢 Yangself666 贡献[java客户端代码](https://github.com/cixingguangming55555/wechat-bot/issues/60)   
 感谢 tsingly 贡献python客户端代码   
 感谢 UoUoio 贡献java客户端代码  
-感谢 qq64161848 贡献E语言客户端代码   
+感谢 qq64161848 贡献易语言客户端代码   
 # 微信版本
 
 微信:[2.8.0.121](https://pan.baidu.com/s/1jrW2HzBxM8wceZRn8hT5UQ)   
