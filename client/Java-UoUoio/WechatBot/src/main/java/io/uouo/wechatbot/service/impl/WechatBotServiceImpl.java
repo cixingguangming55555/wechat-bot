@@ -1,6 +1,5 @@
 package io.uouo.wechatbot.service.impl;
 
-import com.alibaba.fastjson.JSONObject;
 import io.uouo.wechatbot.client.WechatBotClient;
 import io.uouo.wechatbot.common.WechatBotCommon;
 import io.uouo.wechatbot.domain.WechatMsg;
@@ -30,9 +29,24 @@ public class WechatBotServiceImpl implements WechatBotService, WechatBotCommon {
      * @Date 2021-3-18
      */
     @Override
-    public void sendTextMsg(WechatMsg wechatMsg) {
+    public void wechatCommon(WechatMsg wechatMsg) {
         // 消息类型
-        wechatBotClient.sendMsgUtil(TXT_MSG, wechatMsg);
+        wechatBotClient.sendMsgUtil(wechatMsg);
+    }
+
+    /**
+     * 描述: 发送文字消息
+     *
+     * @param wechatMsg 微信消息体
+     * @return void
+     * @Author 青衫 [2940500@qq.com]
+     * @Date 2021-3-18
+     */
+    @Override
+    public void sendTextMsg(WechatMsg wechatMsg) {
+        wechatMsg.setType(TXT_MSG);
+        // 消息类型
+        wechatBotClient.sendMsgUtil(wechatMsg);
     }
 
     /**
@@ -45,7 +59,8 @@ public class WechatBotServiceImpl implements WechatBotService, WechatBotCommon {
      */
     @Override
     public void sendImgMsg(WechatMsg wechatMsg) {
-        wechatBotClient.sendMsgUtil(PIC_MSG, wechatMsg);
+        wechatMsg.setType(PIC_MSG);
+        wechatBotClient.sendMsgUtil(wechatMsg);
     }
 
     /**
@@ -58,7 +73,23 @@ public class WechatBotServiceImpl implements WechatBotService, WechatBotCommon {
      */
     @Override
     public void sendATMsg(WechatMsg wechatMsg) {
-        wechatBotClient.sendMsgUtil(AT_MSG, wechatMsg);
+        wechatMsg.setType(AT_MSG);
+        wechatBotClient.sendMsgUtil(wechatMsg);
+    }
+
+
+    /**
+     * 描述: 发送附件
+     *
+     * @param wechatMsg
+     * @return io.uouo.wechatbot.common.util.AjaxResult
+     * @Author 青衫 [2940500@qq.com]
+     * @Date 2021-3-26
+     */
+    @Override
+    public void sendAnnex(WechatMsg wechatMsg) {
+        wechatMsg.setType(ATTATCH_FILE);
+        wechatBotClient.sendMsgUtil(wechatMsg);
     }
 
 
@@ -69,19 +100,20 @@ public class WechatBotServiceImpl implements WechatBotService, WechatBotCommon {
      * @return io.uouo.wechatbot.common.util.AjaxResult
      * @Author 青衫 [2940500@qq.com]
      * @Date 2021-3-29
+     * @see WechatBotCommon#USER_LIST 发起后会收到一条type类型是该常量值消息
      */
     @Override
     public void getWeChatUserList() {
         WechatMsg wechatMsg = new WechatMsg();
-        wechatMsg.setWxid(NULL_MSG);
+        wechatMsg.setType(USER_LIST);
         wechatMsg.setContent(CONTACT_LIST);
-        wechatBotClient.sendMsgUtil(USER_LIST, wechatMsg);
+        wechatBotClient.sendMsgUtil(wechatMsg);
     }
 
     /**
-     * 描述:
+     * 描述:获取指定联系人的详细信息
      *
-     * @param
+     * @param wxid 被获取详细信息的人的 微信id
      * @return void
      * @Author 青衫 [2940500@qq.com]
      * @Date 2021-3-29
@@ -89,8 +121,7 @@ public class WechatBotServiceImpl implements WechatBotService, WechatBotCommon {
     @Override
     public void getPersonalDetail(String wxid) {
         WechatMsg wechatMsg = new WechatMsg();
-        wechatMsg.setWxid(wxid);
-        wechatMsg.setContent(PERSONAL_DETAIL_CONTENT);
-        wechatBotClient.sendMsgUtil(PERSONAL_DETAIL, wechatMsg);
+        wechatMsg.setType(PERSONAL_DETAIL);
+        wechatBotClient.sendMsgUtil(wechatMsg);
     }
 }

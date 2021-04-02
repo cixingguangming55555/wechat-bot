@@ -19,6 +19,21 @@ public class WechatBotController {
 
 
     /**
+     * 描述: 通用请求接口
+     *
+     * @param wechatMsg
+     * @return io.uouo.wechatbot.common.util.AjaxResult
+     * @Author 青衫 [2940500@qq.com]
+     * @Date 2021-3-26
+     */
+    @PostMapping("/wechatCommon")
+    public AjaxResult wechatCommon(@RequestBody WechatMsg wechatMsg) {
+        wechatBotService.wechatCommon(wechatMsg);
+        return AjaxResult.success();
+    }
+
+
+    /**
      * 描述: 发送文本消息
      *
      * @param wechatMsg
@@ -61,6 +76,20 @@ public class WechatBotController {
         return AjaxResult.success();
     }
 
+    /**
+     * 描述: 发送附件
+     *
+     * @param wechatMsg
+     * @return io.uouo.wechatbot.common.util.AjaxResult
+     * @Author 青衫 [2940500@qq.com]
+     * @Date 2021-3-26
+     */
+    @PostMapping("/sendAnnex")
+    public AjaxResult sendAnnex(@RequestBody WechatMsg wechatMsg) {
+        wechatBotService.sendAnnex(wechatMsg);
+        return AjaxResult.success();
+    }
+
 
     // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 获取信息 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
@@ -79,14 +108,14 @@ public class WechatBotController {
     }
 
     /**
-     * 描述: 获取微信群组,联系人列表 (待调试)
+     * 描述: 获取个人详细信息 3.2.2.121版本dll 未提供该接口
      *
      * @param
      * @return io.uouo.wechatbot.common.util.AjaxResult
      * @Author 青衫 [2940500@qq.com]
      * @Date 2021-3-29
      */
-    @GetMapping("/getPersonalDetail/{wxid}")
+    // @GetMapping("/getPersonalDetail/{wxid}")
     public AjaxResult getPersonalDetail(@PathVariable("wxid") String wxid) {
         wechatBotService.getPersonalDetail(wxid);
         return AjaxResult.success();

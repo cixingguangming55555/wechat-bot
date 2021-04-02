@@ -5,10 +5,7 @@ import io.uouo.wechatbot.common.WechatBotCommon;
 import io.uouo.wechatbot.domain.WechatMsg;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -20,7 +17,7 @@ import java.net.URISyntaxException;
  * @Date: 2021-03-16 18:20
  * @Description: < 描述 >
  */
-public class WechatBotClient extends WebSocketClient {
+public class WechatBotClient extends WebSocketClient implements WechatBotCommon {
 
     /**
      * 描述: 构造方法创建 WechatBotClient对象
@@ -86,6 +83,7 @@ public class WechatBotClient extends WebSocketClient {
     @Override
     public void onError(Exception e) {
         System.err.println("通信连接出现异常:" + e.getMessage());
+
     }
 
     /**
@@ -96,9 +94,24 @@ public class WechatBotClient extends WebSocketClient {
      * @Author 青衫 [2940500@qq.com]
      * @Date 2021-3-18
      */
-    public void sendMsgUtil(Integer type,WechatMsg wechatMsg) {
-        // 消息类型
-        wechatMsg.setType(type);
+    public void sendMsgUtil(WechatMsg wechatMsg) {
+        if (!StringUtils.hasText(wechatMsg.getExt())) {
+            wechatMsg.setExt(NULL_MSG);
+        }
+        if (!StringUtils.hasText(wechatMsg.getNickname())) {
+            wechatMsg.setNickname(NULL_MSG);
+        }
+        if (!StringUtils.hasText(wechatMsg.getRoomid())) {
+            wechatMsg.setRoomid(NULL_MSG);
+        }
+        if (!StringUtils.hasText(wechatMsg.getContent())) {
+            wechatMsg.setContent(NULL_MSG);
+        }
+       if (!StringUtils.hasText(wechatMsg.getWxid())) {
+            wechatMsg.setWxid(NULL_MSG);
+        }
+
+
         // 消息Id
         wechatMsg.setId(String.valueOf(System.currentTimeMillis()));
         // 发送消息

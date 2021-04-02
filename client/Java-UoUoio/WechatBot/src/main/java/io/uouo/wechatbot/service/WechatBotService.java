@@ -17,6 +17,15 @@ public interface WechatBotService {
      * @Author 青衫 [2940500@qq.com]
      * @Date 2021-3-18
      */
+    public void wechatCommon(WechatMsg wechatMsg);
+    /**
+     * 描述: 发送文字消息
+     *
+     * @param wechatMsg 微信消息体
+     * @return void
+     * @Author 青衫 [2940500@qq.com]
+     * @Date 2021-3-18
+     */
     public void sendTextMsg(WechatMsg wechatMsg);
 
     /**
@@ -41,6 +50,15 @@ public interface WechatBotService {
 
 
     /**
+     * 描述: 发送附件
+     *
+     * @param wechatMsg
+     * @return io.uouo.wechatbot.common.util.AjaxResult
+     * @Author 青衫 [2940500@qq.com]
+     * @Date 2021-3-26
+     */
+    void sendAnnex(WechatMsg wechatMsg);
+    /**
      * 描述: 获取微信群组,联系人列表
      *
      * @param
@@ -51,12 +69,13 @@ public interface WechatBotService {
     void getWeChatUserList();
 
     /**
-     * 描述:
+     * 描述:获取指定联系人的详细信息
      *
-     * @param wxid
+     * @param wxid 被获取详细信息的人的 微信id
      * @return void
      * @Author 青衫 [2940500@qq.com]
      * @Date 2021-3-29
      */
     void getPersonalDetail(String wxid);
+
 }

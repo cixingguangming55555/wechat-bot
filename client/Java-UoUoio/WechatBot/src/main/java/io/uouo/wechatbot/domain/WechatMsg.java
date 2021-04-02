@@ -13,11 +13,15 @@ public class WechatMsg {
     /** 消息内容 */
     private String content;
     /** 群组id 群组内发送@消息时使用 */
-    private String roomId;
+    private String roomid;
+    /** 发送消息类型 */
     private Integer type;
+    /** 昵称 */
     private String nickname;
     /** 图片消息的图片地址(绝对路径 D:/xxx.jpg) */
     private String path;
+
+    private String ext;
 
 
     public String getId() {
@@ -44,12 +48,12 @@ public class WechatMsg {
         this.content = content;
     }
 
-    public String getRoomId() {
-        return roomId;
+    public String getRoomid() {
+        return roomid;
     }
 
-    public void setRoomId(String roomId) {
-        this.roomId = roomId;
+    public void setRoomid(String roomid) {
+        this.roomid = roomid;
     }
 
     public Integer getType() {
@@ -76,5 +80,11 @@ public class WechatMsg {
         this.path = path;
     }
 
+    public String getExt() {
+        return ext;
+    }
 
+    public void setExt(String ext) {
+        this.ext = ext;
+    }
 }
