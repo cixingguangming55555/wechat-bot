@@ -31,7 +31,7 @@
 感谢 tsingly 贡献python客户端代码   
 感谢 qq64161848 贡献易语言客户端代码   
 # 微信版本
-
+## 百度网盘
 微信:[2.8.0.121](https://pan.baidu.com/s/1jrW2HzBxM8wceZRn8hT5UQ)   
 提取码:ye2w   
 微信:[2.9.0.123](https://pan.baidu.com/s/1zRJzwlZ1r8aRBeEc0lg1sw)   
@@ -40,6 +40,9 @@
 提取码: nf77  
 微信：[3.2.1.121](https://pan.baidu.com/s/1IHRM2OMvrLyuCz5MRbigGg)  
 提取码: cscn  
+## 天翼云盘（感谢北冥鱼提供）
+微信：[3.2.1.121](https://cloud.189.cn/t/7zmiU3Yr6v22)
+提取码:ha4a
 # 开源
 * [2.7.1.88内存获取用户信息](userlist.cpp)
 * [3.1.0.66]https://github.com/cixingguangming55555/wechat-bot/tree/feature-framework
