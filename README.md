@@ -41,7 +41,7 @@
 微信：[3.2.1.121](https://pan.baidu.com/s/1IHRM2OMvrLyuCz5MRbigGg)  
 提取码: cscn  
 ## 天翼云盘（感谢北冥鱼提供）
-微信：[3.2.1.121](https://cloud.189.cn/t/7zmiU3Yr6v22)  
+微信：[含全部百度云盘版本](https://cloud.189.cn/t/7zmiU3Yr6v22)  
 提取码:ha4a
 # 开源
 * [2.7.1.88内存获取用户信息](userlist.cpp)
