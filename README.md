@@ -1,8 +1,9 @@
 # 重要备份
 * 考虑到github慢和一些其它因素，增加一个备份，可以输入:menu方式获取。先扫码：
 <p align="center">
-  <img src="./pic/qrcode_for_gh_404dcb4ed705_258.jpg" width="120">
+  <img src="https://i.loli.net/2021/04/02/7QScLE6VOd195nP.jpg" width="180">
 </p>
+
 # wechat-bot  馈人玫瑰之手，历久犹有余香
 目前支持微信3.2.1.121  
 针对PC微信的个人机器人成品，学习使用，只提供DLL和客户端代码  
@@ -28,7 +29,7 @@
 感谢 昆明-C#-SakuraYuki 贡献C#客户端代码  
 感谢 Yangself666 贡献[java客户端代码](https://github.com/cixingguangming55555/wechat-bot/issues/60)   
 感谢 tsingly 贡献python客户端代码   
-感谢 UoUoio 贡献[java客户端](https://github.com/UoUoio/WechatBot)
+
 # 微信版本
 
 微信:[2.8.0.121](https://pan.baidu.com/s/1jrW2HzBxM8wceZRn8hT5UQ)   
