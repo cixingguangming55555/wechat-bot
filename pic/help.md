@@ -1,4 +1,7 @@
 # Change Log
+## version 4.6.7.79(2020-04-04)
+### Bug Fixes
+* json exception
 ## version 4.6.7.78(2021-3-30)
 ### wechat upgrade to 3.2.1.121 
 ## version 4.5.7.73(2020-12-11)
