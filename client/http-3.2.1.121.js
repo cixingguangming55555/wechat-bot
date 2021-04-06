@@ -7,6 +7,7 @@
  * send_pic()
  * send_attatch()
  * get_member_nick()
+ * get_personal_info()
  * ***************************************/
 
 const rp = require('request-promise');
@@ -38,10 +39,10 @@ async function send_at_msg()
   const jpara={
     id:getid(),
     type:AT_MSG,
-    roomid:'23023281066@chatroom',//not null  23023281066@chatroom
-    wxid:'zhanghua_cd',//not null
+    roomid:'your roomid',//not null  23023281066@chatroom
+    wxid:'your wxid',//not null
     content:'at msg test,hello world，真的有一套',//not null
-    nickname:'老张',
+    nickname:'your nickname',
     ext:'null'
   };  
   const options =
@@ -71,7 +72,7 @@ async function send_pic()
   const jpara={
     id:getid(),
     type:PIC_MSG,
-    wxid:'23023281066@chatroom',
+    wxid:'your id(wxid or roomid)',//23023281066@chatroom
     roomid:'null',
     content:'C:\\tmp\\2.jpg',
     nickname:"null",
@@ -110,8 +111,8 @@ async function get_member_nick(wx_id,roomid)
       const jpara={
         id:getid(),
         type:CHATROOM_MEMBER_NICK,
-        wxid:'zhanghua_cd',
-        roomid:'23023281066@chatroom',
+        wxid:'your wxid',
+        roomid:'your roomid',//23023281066@chatroom
         content:'null',
         nickname:"null",
         ext:'null'
@@ -291,7 +292,32 @@ async function send_attatch()
 }
 
 
+async function get_personal_info()
+{
 
+
+  const jpara={
+    id:getid(),
+    type:PERSONAL_INFO,
+    wxid:'null',
+    roomid:'null',
+    content:'null',
+    nickname:"null",
+    ext:'null'
+    
+  };
+    const options =
+      {
+          url: url+'/api/get_personal_info',
+          body:{
+            para:jpara
+        },
+        json:true
+       
+      };
+      let data = await rp(options);
+      return data;
+}
 
 
 
@@ -303,13 +329,15 @@ async function main()
     //const j = await get_member_nick("zhanghua_cd","23023281066@chatroom");
     //const j = await send_at_msg();
     //const j = await send_attatch();
-    const j = await get_member_nick();
+    //const j = await get_member_nick();
     //console.log(j);
     //await send_destroy();
     //await refresh_memberlist();
     //console.log("test begin");
     //const j = await send_destroy();
     //const j = await send_attatch();
+    //const j = await send_test();
+    const j = await get_personal_info();
     console.log(j);
 }
 
