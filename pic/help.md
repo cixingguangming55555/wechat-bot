@@ -1,4 +1,7 @@
 # Change Log
+## version 4.6.7.82(2020-04-12)
+### feature
+* #100
 ## version 4.6.7.81(2020-04-06)
 ### feature
 * get personal info(wx)
