@@ -50,7 +50,7 @@
 4、持续升级  
 5、永久免费   
 # DLL功能
-## 发送
+## 发送(websocket&http)
 1、客户端发送好友文本消息（支持websocket和HTTP）    
 2、客户端获取通讯录好友wxid和名字(支持websocket和HTTP)  
 3、客户端发送图片给好友（支持websocket和HTTP）   
