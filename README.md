@@ -43,11 +43,6 @@
 ## 天翼云盘（感谢北冥鱼提供）
 微信：[含全部百度云盘版本](https://cloud.189.cn/t/7zmiU3Yr6v22)  
 提取码:ha4a
-# 开源
-* [2.7.1.88内存获取用户信息](userlist.cpp)
-* [3.1.0.66]https://github.com/cixingguangming55555/wechat-bot/tree/feature-framework
-# 整包下载
-[整包下载](https://github.com/cixingguangming55555/wechat-bot/releases)
 # 文档
 * 请看client目录下client.js和httpjs代码  
 * 微信3.2.1.121的客户端，请参加client-3.2.1.121.js和http-3.2.1.121.js
