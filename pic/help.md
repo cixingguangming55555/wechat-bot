@@ -1,4 +1,9 @@
 # Change Log
+## version 4.6.7.87(2020-05-10)
+### feature
+* #106
+### Bug Fixes
+* #105
 ## version 4.6.7.85(2020-04-26)
 ### feature
 * #102 #103
