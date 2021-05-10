@@ -61,8 +61,6 @@
 5、发送AT消息（支持websocket和HTTP）  
 6、发送附件（仅支持HTTP,weboscket)   
 7、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）   
-# FAQ
-[问题帮助](./pic/help1.md)
 # 注意
 请参见client.js（websocket客户端）和httpclient.js（http客户端）示例代码   
 注入一次即可，如要重新注入，请退出微信，重新启动微信后再注入  
