@@ -1,5 +1,4 @@
-# 重要备份(3.2.1.121源码请到公众号获取)
-* 考虑到github慢和一些其它因素，增加一个备份，可以输入:menu方式获取。先扫码：
+# 源码
 <p align="center">
   <img src="https://i.loli.net/2021/04/02/7QScLE6VOd195nP.jpg" width="180">
 </p>
