@@ -88,4 +88,4 @@
 </center>
 
 # 致谢
-thanks：[thanks](./thanks.md)  
+[thanks](file://./thanks.md)  
