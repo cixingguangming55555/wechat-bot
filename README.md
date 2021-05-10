@@ -50,14 +50,19 @@
 4、持续升级  
 5、永久免费   
 # DLL功能
-0、DLL带websocket和HTTP服务，所有操作均通过websocket客户端和HTTP客户端进行  
+## 发送
 1、客户端发送好友文本消息（支持websocket和HTTP）    
 2、客户端获取通讯录好友wxid和名字(支持websocket和HTTP)  
-3、客户端接收微信收到的文本消息  
-4、客户端发送图片给好友（支持websocket和HTTP）   
-5、发送AT消息（支持websocket和HTTP）  
-6、发送附件（仅支持HTTP,weboscket)   
-7、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）   
+3、客户端发送图片给好友（支持websocket和HTTP）   
+4、发送AT消息（支持websocket和HTTP）  
+5、发送附件（仅支持HTTP,weboscket)   
+67、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）   
+## 接收（websocket）
+1、文本接收  
+2、图片接收（不解密不保存，解密异或即可） 
+3、引用消息接收  
+4、公众号消息接收 
+5、好友请求消息接收    
 # 注意
 请参见client.js（websocket客户端）和httpclient.js（http客户端）示例代码   
 注入一次即可，如要重新注入，请退出微信，重新启动微信后再注入  
