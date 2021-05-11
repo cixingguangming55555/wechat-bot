@@ -51,16 +51,16 @@
 # DLL功能
 ## 发送(websocket&http)
 1、客户端发送好友文本消息（支持websocket和HTTP）    
-2、客户端获取通讯录好友wxid和名字(支持websocket和HTTP)  
-3、客户端发送图片给好友（支持websocket和HTTP）   
-4、发送AT消息（支持websocket和HTTP）  
-5、发送附件（仅支持HTTP,weboscket)   
-67、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）   
+2、客户端获取通讯录好友wxid和名字(支持websocket和HTTP)    
+3、客户端发送图片给好友（支持websocket和HTTP）      
+4、发送AT消息（支持websocket和HTTP）    
+5、发送附件（仅支持HTTP,weboscket)      
+6、获取chatroom成员列表(wxid)和昵称（支持websocket和HTTP）      
 ## 接收（websocket）
 1、文本接收  
 2、图片接收（不解密不保存，解密异或即可） 
 3、引用消息接收  
-4、公众号消息接收 
+4、公众号消息接收  
 5、好友请求消息接收    
 # 注意
 请参见client.js（websocket客户端）和httpclient.js（http客户端）示例代码   
