@@ -18,7 +18,7 @@
 ```
 ###
 ### 重要1，参数传递
-* 切记，jarpa是放在body里面的，即所有传递的参数是放body里面的
+* 切记，jarpa是放在body里面的，即所有传递的参数是放body里面的,para这个key也不能改
 ```
 const options =
       {
