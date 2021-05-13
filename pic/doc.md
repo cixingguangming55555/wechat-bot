@@ -17,3 +17,28 @@
  * get_member_nick()  //获取群成员昵称
 ```
 ###
+### 重要1，参数传递
+* 切记，jarpa是放在body里面的，即所有传递的参数是放body里面的
+```
+const options =
+      {
+          url: url+'/api/sendatmsg',
+          body:{
+            para:jpara
+        },
+        json:true
+      };
+```
+### 重要2，参数传递
+* jarpa里面构造的每一个key都必须存在，不能多也不能少
+```
+const jpara={
+    id:getid(),
+    type:AT_MSG,
+    roomid:'your roomid ',//not null
+    wxid:'your wxid',//not null
+    content:'your content',//not null
+    nickname:'your nickname',//not null
+    ext:'null'
+  };  
+```
