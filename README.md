@@ -1,4 +1,4 @@
-# 源码
+# 源码(馈人玫瑰之手，历久犹有余香)
 <p align="center">
   <img src="https://i.loli.net/2021/04/02/7QScLE6VOd195nP.jpg" width="180">
 </p>
@@ -7,7 +7,7 @@
 # doc
 [使用](./pic/doc.md)   
 
-# wechat-bot  馈人玫瑰之手，历久犹有余香
+# wechat-bot  
 目前支持微信3.2.1.121  
 <p align="center">
   <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
