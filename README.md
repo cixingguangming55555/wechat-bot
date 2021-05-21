@@ -4,7 +4,7 @@
 </p>
 
 
-# doc（请认真阅读client-3.2.1.121.js）
+# doc（请认真阅读及参考client-3.2.1.121.js，http-3.2.1.121.js）
 [使用](./pic/doc.md)   
 
 # wechat-bot  
