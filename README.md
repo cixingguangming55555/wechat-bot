@@ -4,7 +4,7 @@
 </p>
 
 
-# doc
+# doc（请认真阅读）
 [使用](./pic/doc.md)   
 
 # wechat-bot  
