@@ -20,7 +20,7 @@
 ```
 ###
 ### 重要1，参数传递
-* 切记，jarpa是放在body里面的，即所有传递的参数是放body里面的,para这个key也不能改
+* 切记，jpara是放在body里面的，即所有传递的参数是放body里面的,para这个key也不能改
 ```
 const options =
       {
@@ -32,7 +32,7 @@ const options =
       };
 ```
 ### 重要2，参数传递
-* jarpa里面构造的每一个key都必须存在，不能多也不能少
+* jpara里面构造的每一个key都必须存在，不能多也不能少
 ```
 const jpara={
     id:getid(),
