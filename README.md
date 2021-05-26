@@ -1,4 +1,4 @@
-# 源码(馈人玫瑰之手，历久犹有余香)
+# 源码(馈人玫瑰之手，历久犹有余香，不收费，不接收私包和群包)
 <p align="center">
   <img src="https://i.loli.net/2021/04/02/7QScLE6VOd195nP.jpg" width="180">
 </p>
