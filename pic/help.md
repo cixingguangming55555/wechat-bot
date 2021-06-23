@@ -1,7 +1,7 @@
 # Change Log
 ## version 4.6.7.90(2020-06-23)
 ### Bug Fixes
-* crash in multi open,cancel the multi open
+* crash in multi open
 ### enhanced
 * set timer for message which send to client
 ## version 4.6.7.89(2020-05-28)
