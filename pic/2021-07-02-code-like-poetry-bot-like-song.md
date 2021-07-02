@@ -1,8 +1,14 @@
 ---
-title: "code like poetry,bot like song"
+title: "代码如诗，bot如歌"
 author: cixingguangming55555
-image: your_teaser_image_path
+categories: project
+tags:
+  - hook
+image: /assets/2021/06-wxrobot-backend-management/admin.png
 ---
-<One line abstract for your blog post>
 
-<Your beautiful blog post contents...>
+> 作者: [cixingguangming55555](https://github.com/cixingguangming55555
+> Code: [Github](https://github.com/cixingguangming55555)
+
+  # 缘起
+  
