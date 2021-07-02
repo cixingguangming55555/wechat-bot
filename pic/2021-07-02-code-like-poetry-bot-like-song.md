@@ -1,9 +1,9 @@
 ---
 title: "代码如诗，bot如歌"
 author: cixingguangming55555
-categories: project
+categories: blog
 tags:
-  - hook
+  - bot
 ---
 
 > 作者: [cixingguangming55555](https://github.com/cixingguangming55555  
