@@ -49,6 +49,7 @@ image: /assets/2021/06-wxrobot-backend-management/admin.png
   然后真的在友好的氛围中，开始了蛋疼之旅。  
 
   # 历程
+  ## 一
   我对度娘没什么好感，相较google而言。  
   但是我最终还是从了度娘，她毕竟，也能给我一些，我想要的温柔，此处应该有掌声兼括号（不要想多了）。   
   github也经常慢如蜗牛。有时候，你得忍，小不忍，则乱大谋。   
@@ -78,7 +79,8 @@ image: /assets/2021/06-wxrobot-backend-management/admin.png
   然后终于代码跑通了。  
   机器人发出的第一个信息：Hello World!你好，老张！  
   
-  
+## 二
+
   
   
   
