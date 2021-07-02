@@ -4,10 +4,9 @@ author: cixingguangming55555
 categories: blog
 tags:
   - bot
+image: /assets/2021/07-code-like-poetry-bot-like-song/cover.jpg 
 ---
-
-> 作者: [cixingguangming55555](https://github.com/cixingguangming55555  
-> Code: [Github](https://github.com/cixingguangming55555)
+> 作者: [cixingguangming55555](https://github.com/cixingguangming55555)，老张学技术
 
   # 非关
   短，分行，如诗。  
