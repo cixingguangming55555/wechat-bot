@@ -15,4 +15,4 @@ image: /assets/2021/06-wxrobot-backend-management/admin.png
   这个世界，除了我喜欢的汉字的堆叠，竟然还有这样美妙的存在。  
   不是偶然。  
   是生命的重逢。  
-  更是永世的欣喜！  
+  更是一世的欣喜！  
