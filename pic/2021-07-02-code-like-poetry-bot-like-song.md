@@ -4,7 +4,6 @@ author: cixingguangming55555
 categories: project
 tags:
   - hook
-image: /assets/2021/06-wxrobot-backend-management/admin.png
 ---
 
 > 作者: [cixingguangming55555](https://github.com/cixingguangming55555  
