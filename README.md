@@ -1,3 +1,4 @@
+
 # 源码(馈人玫瑰之手，历久犹有余香，不收费，不接收私包和群包)
 <p align="center">
   <img src="https://i.loli.net/2021/04/02/7QScLE6VOd195nP.jpg" width="180">
@@ -77,6 +78,10 @@
 获取chatroom成员列表和昵称，不是通过HOOK，是直接通过内存  
 # 客户端
 * 见client目录下的源码 
+# QQ群（密码:bot）
+<center class="half">
+    <img src="./pic/n1.png" width="400"/>
+</center>
 # 交流
 请扫码微信加好友，到时我会拉入群，备注：bot。空了我会处理的。
 
