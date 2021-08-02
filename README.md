@@ -9,7 +9,7 @@
 [使用](./pic/doc.md)   
 
 # wechat-bot  
-目前支持微信3.2.1.121  
+目前支持微信3.3.0.115  
 <p align="center">
   <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
 </p>
