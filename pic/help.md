@@ -1,4 +1,7 @@
 # Change Log
+## version 4.7.7.91(2021-08-01)
+### implenmented enhancements
+* wechat version urgrade to 3.3.0.115
 ## version 4.6.7.91(2021-07-27)
 ### Bug Fixes
 * return error character on get_personal_info 
@@ -60,7 +63,7 @@
 
 ## version 3.4.7.66(2020-05-24)
 ### Feature
-* 希望可以增加发送文件的功能,closes #28
+* send attatch,closes #28
 
 ## version 3.3.7.66(2020-5-14)
 ### Feature
