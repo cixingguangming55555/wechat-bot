@@ -80,7 +80,7 @@
 # 客户端
 * 见client目录下的源码  
 * 
-# 建议加QQ群：741552709（密码:bot）
+# 建议加QQ群：741552709
 <center class="half">
     <img src="./pic/n1.png" width="400"/>
 </center>
