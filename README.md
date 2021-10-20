@@ -8,7 +8,7 @@
 
 
 # doc（请认真阅读及参考client-3.2.1.121.js，http-3.2.1.121.js）
-[使用](./pic/doc.md)   
+[使用文档](./pic/doc.md)   
 
 # wechat-bot   
 <p align="center">
