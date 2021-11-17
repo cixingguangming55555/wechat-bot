@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./vue.min.js"></script>
+  <script src="./index.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .frame-container {
+      height: 100vh;
+    }
+
+    .main{
+      background-color: transparent;
+    }
+
+    .aside {
+      background-color: transparent;
+      padding: 20px;
+    }
+
+    .aside .el-row {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body style="background-image: url('./bg.jpeg');background-position: center;background-size: cover">
+<div id="app">
+  <el-container class="frame-container">
+    <el-aside width="250px" class="aside">
+      <el-row class="menu-row">
+        监测总开关:
+        <el-switch
+                v-model="is_start"
+                active-color="#13ce66"
+                inactive-color="#ff4949"
+                @change=on_change>
+        </el-switch>
+      </el-row>
+      <el-row>
+        操作时间: {{wx_time}}
+      </el-row>
+      <el-row>
+        登录状态: {{login_status}}
+      </el-row>
+      <el-row>
+        微信号: {{wx_code}}
+      </el-row>
+      <el-row>
+        微信昵称: {{wx_name}}
+      </el-row>
+    </el-aside>
+    <el-container>
+      <el-main class="main">
+        <el-container>
+          <el-row style="margin-right: 50px;">
+            <div style="overflow: hidden;">
+              <span style="float: left;">私聊回复规则</span>
+              <el-button style="float: right" plain @click="dialogFormVisible = true;is_add_private = true;">添加规则</el-button>
+            </div>
+            <el-divider></el-divider>
+            <el-table
+                    :data="private_chat_reg"
+                    style="width: 100%;">
+              <el-table-column
+                      prop="reply"
+                      label="回复内容"
+                      width="180">
+              </el-table-column>
+              <el-table-column
+                      prop="regex"
+                      label="正则匹配"
+                      width="180">
+              </el-table-column>
+              <el-table-column label="操作" width="150px">
+                <template slot-scope="scope">
+                  <el-button
+                          size="mini"
+                          @click="handleEditAddPrivateRegex(scope.$index, scope.row)">编辑</el-button>
+                  <el-button
+                          size="mini"
+                          type="danger"
+                          @click="handleDeleteAddPrivateRegex(scope.$index, scope.row)">删除</el-button>
+                </template>
+              </el-table-column>
+            </el-table>
+          </el-row>
+
+          <el-row>
+            <div style="overflow: hidden;">
+              <span style="float: left;">群聊回复规则</span>
+              <el-button style="float: right;" plain @click="dialogFormVisible = true;is_add_private = false;">添加规则</el-button>
+            </div>
+            <el-divider></el-divider>
+            <el-table
+                    :data="chatroom_reg"
+                    style="width: 100%">
+              <el-table-column
+                      prop="reply"
+                      label="回复内容"
+                      width="180">
+              </el-table-column>
+              <el-table-column
+                      prop="regex"
+                      label="正则匹配"
+                      width="180">
+              </el-table-column>
+              <el-table-column label="操作" width="150px">
+                <template slot-scope="scope">
+                  <el-button
+                          size="mini"
+                          @click="handleEditAddChatRoom(scope.$index, scope.row)">编辑</el-button>
+                  <el-button
+                          size="mini"
+                          type="danger"
+                          @click="handleDeleteAddChatRoom(scope.$index, scope.row)">删除</el-button>
+                </template>
+              </el-table-column>
+            </el-table>
+          </el-row>
+
+          <el-dialog title="添加规则" :visible.sync="dialogFormVisible" @close="on_add_regex_dialog_close">
+            <el-form :model="add_regex_form">
+              <el-form-item label="回复内容" :label-width="formLabelWidth">
+                <el-input v-model="add_regex_form.reply" autocomplete="off"></el-input>
+              </el-form-item>
+              <el-form-item label="匹配规则" :label-width="formLabelWidth">
+                <el-input v-model="add_regex_form.regex" autocomplete="off"></el-input>
+              </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+              <el-button @click="dialogFormVisible = false;is_cancel_operator = true;">取 消</el-button>
+              <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+            </div>
+          </el-dialog>
+
+          <el-dialog title="编辑规则" :visible.sync="dialogEditFormVisible" @close="on_edit_regex_dialog_close">
+            <el-form :model="add_regex_form">
+              <el-form-item label="回复内容" :label-width="formLabelWidth">
+                <el-input v-model="add_regex_form.reply" autocomplete="off"></el-input>
+              </el-form-item>
+              <el-form-item label="匹配规则" :label-width="formLabelWidth">
+                <el-input v-model="add_regex_form.regex" autocomplete="off"></el-input>
+              </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+              <el-button @click="dialogEditFormVisible = false;is_cancel_operator = true;">取 消</el-button>
+              <el-button type="primary" @click="dialogEditFormVisible = false">确 定</el-button>
+            </div>
+          </el-dialog>
+        </el-container>
+      </el-main>
+      <el-footer class="footer"></el-footer>
+    </el-container>
+  </el-container>
+
+
+</div>
+
+<script>
+  /**
+   * 用于与微信通信通信定义的一系列常量
+   */
+  const HEART_BEAT = 5005;
+  const RECV_TXT_MSG = 1;
+  const RECV_PIC_MSG = 3;
+  const USER_LIST = 5000;
+  const GET_USER_LIST_SUCCSESS = 5001;
+  const GET_USER_LIST_FAIL = 5002;
+  const TXT_MSG = 555;
+  const PIC_MSG = 500;
+  const AT_MSG = 550;
+  const CHATROOM_MEMBER = 5010;
+  const CHATROOM_MEMBER_NICK = 5020;
+  const PERSONAL_INFO = 6500;
+  const DEBUG_SWITCH = 6000;
+  const PERSONAL_DETAIL = 6550;
+  const DESTROY_ALL = 9999;
+  const NEW_FRIEND_REQUEST = 37;//微信好友请求消息
+  const AGREE_TO_FRIEND_REQUEST = 10000;//同意微信好友请求消息
+  const ATTATCH_FILE = 5003;
+
+  function getid() {
+    const id = Date.now();
+    return id.toString();
+  }
+
+  function get_personal_info() {
+    const j = {
+      id: getid(),
+      type: PERSONAL_INFO,
+      wxid: 'null',
+      roomid: 'null',
+      content: 'null',
+      nickname: "null",
+      ext: 'null'
+    };
+    return JSON.stringify(j);
+  }
+
+  function get_personal_detail(wxid) {
+    const j = {
+      id: getid(),
+      type: PERSONAL_DETAIL,
+      content: 'op:personal detail',
+      wxid: wxid
+    };
+    return JSON.stringify(j);
+  }
+
+  function get_contact_list() {
+    const j = {
+      id: getid(),
+      type: USER_LIST,
+      roomid: 'null',//null
+      wxid: 'null',//not null
+      content: 'null',//not null
+      nickname: 'null',
+      ext: 'null'
+    };
+    return JSON.stringify(j);
+  }
+
+  /**
+   * 发送文本消息
+   * @param wxid 微信id或者群id
+   * @param content 发送的内容
+   * @returns {string}
+   */
+  function send_txt_msg(wxid, content) {
+    //必须按照该json格式，否则服务端会出异常
+    const j = {
+      id: getid(),
+      type: TXT_MSG,
+      wxid: wxid,//roomid或wxid,必填
+      roomid: 'null',//此处为空
+      content: content,
+      nickname: "null",//此处为空
+      ext: 'null'//此处为空
+    };
+    return JSON.stringify(j);
+  }
+
+  /**
+   * 发送@的文本消息
+   * @param wxid 自己的微信id
+   * @param roomid 群聊id
+   * @param content 发送的内容
+   * @param nickname 要@人的昵称
+   * @returns {string}
+   */
+  function send_at_msg(wxid, roomid, content, nickname) {
+    const j = {
+      id: getid(),
+      type: AT_MSG,
+      roomid,//not null
+      wxid,//not null
+      content,//not null
+      nickname,
+      ext: 'null'
+    };
+    return JSON.stringify(j);
+  }
+
+  /**
+   * 获得群成员的昵称
+   * @param s_wxid
+   * @param s_roomid
+   * @returns {string}
+   */
+  function get_chat_nick_p(s_wxid, s_roomid) {
+    const j = {
+      id: getid(),
+      type: CHATROOM_MEMBER_NICK,
+      wxid: s_wxid,
+      roomid: s_roomid,
+      content: 'null',
+      nickname: "null",
+      ext: 'null'
+    };
+    return JSON.stringify(j);
+  }
+
+  function get_chatroom_memberlist() {
+    const j = {
+      id: getid(),
+      type: CHATROOM_MEMBER,
+      roomid: 'null',//null
+      wxid: 'null',//not null
+      content: 'null',//not null
+      nickname: 'null',
+      ext: 'null'
+    };
+    return JSON.stringify(j);
+  }
+</script>
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      wsClient: null,       //ws是与微信通信的对象
+      is_start: false,
+      is_reply_at: false,   //在群聊回复的时候是否@
+      my_wxid: '',
+      login_status: '',
+      wx_code: '',
+      wx_name: '',
+      wx_time: '',
+      private_chat_reg: [   //私聊回复规则
+        {
+          reply: '666',
+          regex: '^1$'
+        }
+      ],
+      chatroom_reg: [       //群聊回复规则
+        {
+          reply: '666',
+          regex: '^1$'
+        }
+      ],
+      dialogFormVisible: false,
+      dialogEditFormVisible: false,
+      formLabelWidth: '120px',
+      is_cancel_operator: false, //进行添加和编辑规则的时候是否点击了取消操作
+      is_add_private: false, //是否正在添加私有规则，真添加私有，假添加群聊
+      is_edit_private: false,//是否正在编辑私有规则，真编辑私有，假编辑群聊
+      current_edit_index: 0, //如果现在正在编辑规则，现在编辑的下标是哪一个
+      add_regex_form:{
+        reply: '',
+        regex: ''
+      }
+    },
+    methods: {
+      handleEditAddPrivateRegex(index, row) {
+        this.add_regex_form.regex = this.private_chat_reg[index]['regex'];
+        this.add_regex_form.reply = this.private_chat_reg[index]['reply'];
+        this.is_edit_private = true;
+        this.current_edit_index = index;
+        this.dialogEditFormVisible = true;
+      },
+      handleDeleteAddPrivateRegex(index, row) {
+        this.private_chat_reg.splice(index, 1);
+      },
+
+      handleEditAddChatRoom(index, row) {
+        this.add_regex_form.regex = this.chatroom_reg[index]['regex'];
+        this.add_regex_form.reply = this.chatroom_reg[index]['reply'];
+        this.is_edit_private = false;
+        this.current_edit_index = index;
+        this.dialogEditFormVisible = true;
+      },
+      handleDeleteAddChatRoom(index, row) {
+        this.chatroom_reg.splice(index, 1);
+      },
+
+      /**
+       * 当编辑规则点击后的回调函数
+       */
+      on_edit_regex_dialog_close(){
+        if(this.is_cancel_operator){
+          this.is_cancel_operator = false;
+          return;
+        }
+        if(this.add_regex_form.reply === '' || this.add_regex_form.regex === ''){
+          this.$message('请填入有效值');
+          return;
+        }
+        if(this.is_edit_private){ //正在编辑私有匹配规则
+          this.private_chat_reg[this.current_edit_index].regex = this.add_regex_form.regex;
+          this.private_chat_reg[this.current_edit_index].reply = this.add_regex_form.reply;
+        }else{ //正在编辑群聊匹配规则
+          this.chatroom_reg[this.current_edit_index].regex = this.add_regex_form.regex;
+          this.chatroom_reg[this.current_edit_index].reply = this.add_regex_form.reply;
+        }
+      },
+
+      /**
+       * 当添加规则点击确定后的回调函数
+       */
+      on_add_regex_dialog_close(){
+        if(this.is_cancel_operator){
+          this.is_cancel_operator = false;
+          return;
+        }
+        if(this.add_regex_form.reply === '' || this.add_regex_form.regex === ''){
+          return;
+        }
+        var item = {
+          reply: this.add_regex_form.reply,
+          regex: this.add_regex_form.regex
+        };
+        if(this.is_add_private){
+          this.private_chat_reg.push(item);
+          this.$message('添加一条私聊匹配规则');
+        }else{
+          this.chatroom_reg.push(item);
+          this.$message('添加一条群聊匹配规则');
+        }
+        this.add_regex_form.regex = '';
+        this.add_regex_form.reply = '';
+      },
+
+      /**
+       * 总开关开火关闭都会触发此方法
+       * @param val
+       */
+      on_change(val) {
+        if (val) {
+          console.log('开启');
+          this.wsClient = new WebSocket('ws://127.0.0.1:5555');
+          this.wsClient.onopen = this.ws_on_open;
+          this.wsClient.onclose = this.ws_on_close;
+          this.wsClient.onerror = this.ws_on_error;
+          this.wsClient.onmessage = this.ws_on_message;
+        } else {
+          console.log('关闭');
+          this.wsClient.close();
+          this.wsClient = null;
+          this.wx_code = '';
+          this.wx_name = '';
+          this.login_status = '';
+          this.wx_time = '';
+        }
+      },
+
+      /**
+       * 处理文字消息
+       * @param j json数据
+       */
+      handle_recv_msg(j) {
+        const content = j.content;
+        const wxid = j.wxid;
+        const reg = /\d{11}@chatroom/;
+        var i;
+        var item;
+        if (reg.test(wxid)) { //是群聊
+          for(i = 0; i < this.chatroom_reg.length; ++i){
+            item = this.chatroom_reg[i];
+            if((new RegExp(item['regex'])).test(content)){
+              this.wsClient.send(send_txt_msg(wxid, item['reply']));
+            }
+          }
+        } else {  //是私聊
+          this.my_wxid = j['wxid'];
+          for(i = 0; i < this.private_chat_reg.length; ++i){
+            item = this.private_chat_reg[i];
+            if((new RegExp(item['regex'])).test(content)){
+              this.wsClient.send(send_txt_msg(wxid, item['reply']));
+            }
+          }
+        }
+      },
+
+      /**
+       * ws初始化回调函数
+       */
+      ws_on_open() {
+        //在与微信建立连接的时候发送一条获取个人信息
+        this.wsClient.send(get_personal_info());
+        //this.wsClient.send(get_contact_list());
+        //this.wsClient.send(get_chatroom_memberlist());
+        //this.wsClient.send(send_at_msg('wxid_disnthp8qixe22', '17569152823@chatroom', '666', 'yunni'));
+      },
+
+      /**
+       * 收到微信传来的消息的回调函数
+       * @param ev
+       */
+      ws_on_message(ev) {
+        const data = JSON.parse(ev.data);
+        console.log(data);
+        switch (data.type) {
+          case PERSONAL_INFO: //收到个人信息
+            const content = JSON.parse(data['content']);
+            this.wx_code = content['wx_code'];
+            this.wx_name = content['wx_name'];
+            this.wx_time = data['time'];
+            this.login_status = data['status'];
+            break;
+          case HEART_BEAT:    //收到心跳
+            break;
+          case RECV_TXT_MSG:  //收到文字消息
+            this.handle_recv_msg(data);
+            break;
+          case RECV_PIC_MSG:  //收到图片消息
+            //不予理会
+            break;
+          default:
+            break;
+        }
+      },
+
+      /**
+       * 主动与微信断开连接的回调函数
+       * @param ev
+       */
+      ws_on_close(ev) {
+
+      },
+
+      /**
+       * 与微信连接发生错误的回调函数
+       * @param ev
+       */
+      ws_on_error(ev) {
+        alert('微信断开连接');
+      }
+    }
+  })
+</script>
+</body>
+</html>
