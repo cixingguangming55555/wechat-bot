@@ -164,21 +164,21 @@ void Logic::handle_wxuser_list(cJSON * json)
 			continue;
 		QString wxid = val->valuestring;
 		if (wxid.startsWith("wxid"))
-		{//ÊÇÎ¢ĞÅºÃÓÑ
+		{//æ˜¯å¾®ä¿¡å¥½å‹
 			//qDebug() << "friend: " << cJSON_GetObjectItem(item, "name")->valuestring;
 			friends.push_back(item);
 		}
 		else if (wxid.endsWith("@chatroom"))
-		{//ÊÇÈºÁÄ
+		{//æ˜¯ç¾¤èŠ
 			//qDebug() << "chatroom: " << cJSON_GetObjectItem(item, "name")->valuestring;
 			chatrooms.push_back(item);
 		}
 		else if (wxid.startsWith("gh"))
-		{//¹«ÖÚºÅ
+		{//å…¬ä¼—å·
 			//qDebug() << "ps: " << cJSON_GetObjectItem(item, "name")->valuestring;
 		}
 		else
-		{//ÆäËûÒ»ÂÉ²»¹Ü
+		{//å…¶ä»–ä¸€å¾‹ä¸ç®¡
 		}
 	}
 
@@ -188,7 +188,7 @@ void Logic::handle_wxuser_list(cJSON * json)
 void Logic::handle_new_member(cJSON * json)
 {
 	cJSON * content = cJSON_GetObjectItem(json, "content");
-	std::regex pattern(".*?ÑûÇë\"(.*?)\"¼ÓÈëÁËÈºÁÄ");
+	std::regex pattern(".*?é‚€è¯·\"(.*?)\"åŠ å…¥äº†ç¾¤èŠ");
 	string text = UTF8ToGBK(cJSON_GetObjectItem(content, "content")->valuestring);
 	string wxid = cJSON_GetObjectItem(content, "id1")->valuestring;
 	smatch results;
@@ -198,8 +198,8 @@ void Logic::handle_new_member(cJSON * json)
 	string nickname = GBKToUTF8(results[1].str().c_str());
 	auto all_regs_iter = instance_->all_chatoom_regs_.find(wxid + "_nm");
 	if (all_regs_iter == instance_->all_chatoom_regs_.end())
-	{//ÀíÂÛÉÏ²»¿ÉÄÜ·¢Éú
-		QMessageBox::information(NULL, QString::fromLocal8Bit("¾¯¸æ"), QString::fromLocal8Bit("³ÌĞò³öÏÖÒì³££¬ÇëÖØÆô"));
+	{//ç†è®ºä¸Šä¸å¯èƒ½å‘ç”Ÿ
+		QMessageBox::information(NULL, QString::fromLocal8Bit("è­¦å‘Š"), QString::fromLocal8Bit("ç¨‹åºå‡ºç°å¼‚å¸¸ï¼Œè¯·é‡å¯"));
 		return;
 	}
 	for (auto & reg : all_regs_iter->second)
@@ -262,18 +262,18 @@ void Logic::handle_txt_msg(cJSON * json)
 	string wxid = cJSON_GetObjectItem(json, "wxid")->valuestring;
 	regex reg("\\d{11}@chatroom");
 	if (regex_match(wxid, reg))
-	{//ÊÇÈºÁÄ
+	{//æ˜¯ç¾¤èŠ
 		auto all_regs_iter = instance_->all_chatoom_regs_.find(wxid);
 		if (all_regs_iter == instance_->all_chatoom_regs_.end())
-		{//ÀíÂÛÉÏ²»¿ÉÄÜ·¢Éú
-			QMessageBox::information(NULL, QString::fromLocal8Bit("¾¯¸æ"), QString::fromLocal8Bit("³ÌĞò³öÏÖÒì³££¬ÇëÖØÆô"));
+		{//ç†è®ºä¸Šä¸å¯èƒ½å‘ç”Ÿ
+			QMessageBox::information(NULL, QString::fromLocal8Bit("è­¦å‘Š"), QString::fromLocal8Bit("ç¨‹åºå‡ºç°å¼‚å¸¸ï¼Œè¯·é‡å¯"));
 			return;
 		}
 		for (auto & reg : all_regs_iter->second)
 		{
 			string regex_str = reg.find("regex")->second;
 			if (regex_match(content->valuestring, std::regex(regex_str)))
-			{//Æ¥Åäµ½ÁË
+			{//åŒ¹é…åˆ°äº†
 				string reply = reg.find("reply")->second;
 				bool is_file = reg.find("is_file")->second == "1" ? true : false;
 				bool is_at = reg.find("is_at")->second == "1" ? true : false;
@@ -306,19 +306,20 @@ void Logic::handle_txt_msg(cJSON * json)
 		}
 	}
 	else
-	{//ÊÇË½ÁÄ
+	{//æ˜¯ç§èŠ
 		my_wxid = wxid;
 		auto all_regs_iter = instance_->all_friend_regs_.find(wxid);
 		if (all_regs_iter == instance_->all_friend_regs_.end())
-		{//ÀíÂÛÉÏ²»¿ÉÄÜ·¢Éú
-			QMessageBox::information(NULL, QString::fromLocal8Bit("¾¯¸æ"), QString::fromLocal8Bit("³ÌĞò³öÏÖÒì³££¬ÇëÖØÆô"));
+		{
+			//å…¬ä¼—å·ä¹‹ç±»çš„ä¹Ÿä¼šè§¦å‘ï¼Œä½†æ˜¯ä¸éœ€è¦å¤„ç†
+			//QMessageBox::information(NULL, QString::fromLocal8Bit("è­¦å‘Š"), QString::fromLocal8Bit("ç¨‹åºå‡ºç°å¼‚å¸¸ï¼Œè¯·é‡å¯"));
 			return;
 		}
 		for (auto & reg : all_regs_iter->second)
 		{
 			string regex_str = reg.find("regex")->second;
 			if (regex_match(content->valuestring, std::regex(regex_str)))
-			{//Æ¥Åäµ½ÁË
+			{//åŒ¹é…åˆ°äº†
 				string reply = reg.find("reply")->second;
 				bool is_file = reg.find("is_file")->second == "1" ? true : false;
 				const char * id1 = cJSON_GetObjectItem(json, "id1")->valuestring;
@@ -351,7 +352,7 @@ void Logic::dispatch_msg(cJSON * json)
 	case USER_LIST:
 		handle_wxuser_list(json);
 		break;
-	case AGREE_TO_FRIEND_REQUEST:	//ĞÂºÃÓÑ»òĞÂÈºÓÑ
+	case AGREE_TO_FRIEND_REQUEST:	//æ–°å¥½å‹æˆ–æ–°ç¾¤å‹
 		handle_new_member(json);
 		break;
 	case CHATROOM_MEMBER:
