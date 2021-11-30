@@ -199,7 +199,7 @@ void Logic::handle_new_member(cJSON * json)
 	auto all_regs_iter = instance_->all_chatoom_regs_.find(wxid + "_nm");
 	if (all_regs_iter == instance_->all_chatoom_regs_.end())
 	{//理论上不可能发生
-		QMessageBox::information(NULL, QString::fromLocal8Bit("警告"), QString::fromLocal8Bit("程序出现异常，请重启"));
+		//QMessageBox::information(NULL, QString::fromLocal8Bit("警告"), QString::fromLocal8Bit("程序出现异常，请重启"));
 		return;
 	}
 	for (auto & reg : all_regs_iter->second)
@@ -266,7 +266,7 @@ void Logic::handle_txt_msg(cJSON * json)
 		auto all_regs_iter = instance_->all_chatoom_regs_.find(wxid);
 		if (all_regs_iter == instance_->all_chatoom_regs_.end())
 		{//理论上不可能发生
-			QMessageBox::information(NULL, QString::fromLocal8Bit("警告"), QString::fromLocal8Bit("程序出现异常，请重启"));
+			//QMessageBox::information(NULL, QString::fromLocal8Bit("警告"), QString::fromLocal8Bit("程序出现异常，请重启"));
 			return;
 		}
 		for (auto & reg : all_regs_iter->second)
