@@ -35,6 +35,7 @@
 感谢 qq64161848 贡献易语言客户端代码   
 感谢 ttc 贡献python客户端代码   
 感谢 yunnibbd 贡献html示例  
+感谢 yunnibbd gongxian QT c++ 版本示例  
 # 微信版本
 ## 百度网盘
 微信:[2.8.0.121](https://pan.baidu.com/s/1jrW2HzBxM8wceZRn8hT5UQ)   
