@@ -2,6 +2,7 @@
 
 import websocket,time,json,requests,os
 from bs4 import BeautifulSoup
+websocket._logging._logger.level = -99
 
 ip='127.0.0.1'
 port=5555
