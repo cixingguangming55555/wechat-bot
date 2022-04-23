@@ -13,9 +13,9 @@
 
 # wechat-bot   
 <p align="center">
-<a href="https://github-readme-stats.vercel.app/api?username=cixingguangming55555&show_icons=true&theme=radical">
+  <a href="https://github-readme-stats.vercel.app/api?username=cixingguangming55555&show_icons=true&theme=radical">
   </a>
-  </p>
+</p>
 <p align="center">
   <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
 </p>
