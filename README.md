@@ -12,7 +12,7 @@
 [使用文档](./pic/doc.md)   
 
 # wechat-bot   
-[![cixingguangming55555's github stats](https://github-readme-stats.vercel.app/api?username=cixingguangming55555)](https://github.com/anuraghazra/github-readme-stats)
+[![cixingguangming55555's github stats](https://github-readme-stats.vercel.app/api?username=cixingguangming55555&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
 <p align="center">
   <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
