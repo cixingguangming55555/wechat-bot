@@ -1,9 +1,5 @@
 
 # 支持3.6.0.18    
-
-# doc（请认真阅读及参考client-3.2.1.121.js，http-3.2.1.121.js）
-[使用文档](./pic/doc.md)   
-
 # wechat-bot   
 [![cixingguangming55555's github stats](https://github-readme-stats.vercel.app/api?username=cixingguangming55555&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
