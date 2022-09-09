@@ -1,12 +1,6 @@
 
 # 支持3.6.0.18    
 
-# 源码(馈人玫瑰之手，历久犹有余香，不收费，不接收私包和群包)
-<p align="center">
-  <img src="https://i.loli.net/2021/04/02/7QScLE6VOd195nP.jpg" width="180">
-</p>
-
-
 # doc（请认真阅读及参考client-3.2.1.121.js，http-3.2.1.121.js）
 [使用文档](./pic/doc.md)   
 
