@@ -1,7 +1,7 @@
 
 # 支持3.6.0.18    
 # wechat-bot   
-# [GitHub Stats Visualization](https://github.com/cixingguangming55555/github-stats)
+# [老张学技术](https://github.com/cixingguangming55555/github-stats)
 
 <!--
 https://github.community/t/support-theme-context-for-images-in-light-vs-dark-mode/147981/84
