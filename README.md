@@ -3,7 +3,7 @@
 # wechat-bot   
 <p align="center">
 [![cixingguangming55555's github stats](https://github-readme-stats.vercel.app/api?username=cixingguangming55555&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
-  </p>
+</p>
 
 <p align="center">
   <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
