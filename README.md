@@ -2,16 +2,8 @@
 # 支持3.6.0.18    
 # wechat-bot   
 # [老张学技术](https://github.com/cixingguangming55555/github-stats)
+[![老张学技术's GitHub stats](https://github-readme-stats.vercel.app/api?username=cixingguangming55555)](https://github.com/cixingguangming55555/github-readme-stats)
 
-<!--
-https://github.community/t/support-theme-context-for-images-in-light-vs-dark-mode/147981/84
--->
-<a href="https://github.com/cixingguangming55555/github-stats">
-<img src="https://github.com/cixingguangming55555/github-stats/blob/master/generated/overview.svg#gh-dark-mode-only" />
-<img src="https://github.com/cixingguangming55555/github-stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
-<img src="https://github.com/cixingguangming55555/github-stats/blob/master/generated/overview.svg#gh-light-mode-only" />
-<img src="https://github.com/cixingguangming55555/github-stats/blob/master/generated/languages.svg#gh-light-mode-only" />
-</a>
 
 <p align="center">
   <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
