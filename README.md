@@ -2,7 +2,7 @@
 # 支持3.6.0.18    
 # wechat-bot   
 # [老张学技术](https://github.com/cixingguangming55555/github-stats)
-[](https://raw.githubusercontent.com/cixingguangming55555/github-stats/master/generated/overview.svg#gh-dark-mode-only) ![](https://raw.githubusercontent.com/cixingguangming55555/github-stats/master/generated/overview.svg#gh-light-mode-only) ![](https://raw.githubusercontent.com/cixingguangming55555/github-stats/master/generated/languages.svg#gh-dark-mode-only) ![](https://raw.githubusercontent.com/cixingguangming55555/github-stats/master/generated/languages.svg#gh-light-mode-only)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=cixingguangming55555&show_icons=true&theme=radical)
 
 <p align="center">
   <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
