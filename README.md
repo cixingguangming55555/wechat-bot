@@ -1,7 +1,6 @@
 
 # 支持3.6.0.18    
 # wechat-bot   
-[![老张学技术 GitHub stats](https://github-readme-stats.vercel.app/api?username=cixingguangming55555)](https://github.com/cixingguangming55555/github-readme-stats)
 ![老张学技术 GitHub stats](https://github-readme-stats.vercel.app/api?username=cixingguangming55555&show_icons=true&theme=radical)
 
 <p align="center">
