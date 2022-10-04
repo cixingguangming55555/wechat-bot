@@ -2,6 +2,7 @@
 # 支持3.6.0.18    
 # wechat-bot   
 ![老张学技术's GitHub stats](https://github-readme-stats.vercel.app/api?username=cixingguangming55555&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=cixingguangming55555&theme=dark&show_icons=true)
 
 <p align="center">
   <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
