@@ -1,5 +1,4 @@
-
-# 支持3.6.0.18    
+# 支持3.6.0.18  （提供注入版和非注入版本）  
 # wechat-bot   
 <a href="https://github.com/cixingguangming55555/wechat-bot">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=cixingguangming55555&repo=wechat-bot" />
