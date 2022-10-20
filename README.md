@@ -2,6 +2,7 @@
 ## 非注入版使用方法(funtool_3.6.0.18-1.0.006非注入版.exe)
 * 1、双击启动funtool_3.6.0.18-1.0.006非注入版
 * 2、点击start即可
+* 注意：使用完成后，请正常关闭程序
 
 # wechat-bot   
 <a href="https://github.com/cixingguangming55555/wechat-bot">
