@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/WeChatBot">
-        <file>loading.gif</file>
-    </qresource>
-</RCC>
