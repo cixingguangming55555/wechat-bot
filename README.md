@@ -18,4 +18,5 @@
   </a>
 </p>
 
-# 春节后开新坑，右边release还可以继续下载   
+# 新坑QQ群
+<image src="readme/31676442824_.pic.jpg">
