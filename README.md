@@ -19,4 +19,4 @@
 </p>
 
 # 新坑QQ群
-<image src="readme/31676442824_.pic.jpg">
+<image src="raw/master/readme/31676442824_.pic.jpg">
