@@ -82,3 +82,7 @@ async function send_txt_msg()
 ### 注意 
 * 所有遇到的异常，都是因为json构造错误造成
 * 切记，json里面,是7个配对的key和value，差1个都不行
+
+## 多开
+* https://github.com/ChisBread/wechat-service
+* 记得为这位大佬加星
