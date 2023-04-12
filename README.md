@@ -53,6 +53,32 @@ function send_txt_msg()
   return s;
 }
 ```
+
+### 发送文本消息示例--http
+```javascript
+async function send_txt_msg()
+{
+  const jpara={
+    id:getid(),
+    type:TXT_MSG,
+    wxid:'23023281066@chatroom',//roomid或wxid,必填
+    roomid:'null',//此处为空
+    content:'hello word',
+    nickname:"null",//此处为空
+    ext:'null'//此处为空
+  };
+  const options =
+  {
+          url: url+'/api/sendtxtmsg',
+          body:{
+            para:jpara
+        },
+        json:true
+  };
+  let data = await rp(options);
+  return data;
+}
+```
 ### 注意 
 * 所有遇到的异常，都是因为json构造没对造成的
 * json里面要填写7个,记得是7个配对的key和value
