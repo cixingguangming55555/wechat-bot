@@ -27,7 +27,7 @@ cd docker_buiding/injector-box
 # docker rm -f wechat-bot
 # docker rmi -f chisbread/wechat-bot:1.0
 sudo docker build -t chisbread/wechat-bot:1.0 .
-# sudo docker run -itd --name wechat-bot --rm  \
+# sudo docker run -itd --name wechat-bot  \
 #     -e HOOK_PROC_NAME=WeChat \
 #     -e TARGET_AUTO_RESTART="yes" \
 #     -e INJ_CONDITION="[ \"\`ps -aux | grep funtool | grep -v grep\`\" != '' ] && exit 0" \
