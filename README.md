@@ -84,5 +84,17 @@ async function send_txt_msg()
 * 切记，json里面,是7个配对的key和value，差1个都不行
 
 ## 多开
+```
+chmod +x build-injector-box.sh
+sudo docker run -itd --name wechat-bot --rm  \
+    -e HOOK_PROC_NAME=WeChat \
+    -e TARGET_AUTO_RESTART="yes" \
+    -e INJ_CONDITION="[ \"\`ps -aux | grep funtool | grep -v grep\`\" != '' ] && exit 0" \
+    -e TARGET_CMD=wechat-start \
+    -p 8080:8080 -p 5555:5555 -p 5900:5900 \
+    --add-host=dldir1.qq.com:127.0.0.1 \
+    chisbread/wechat-bot:1.0
+```
+### 参考项目
 * https://github.com/ChisBread/wechat-service
 * 记得为这位大佬加星
