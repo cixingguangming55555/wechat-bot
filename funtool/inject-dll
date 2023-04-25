@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# cd /home/app/.wine/drive_c/injector
+wine /bin/funtool_3.6.0.18-1.0.0015非注入版.exe &

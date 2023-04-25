@@ -84,5 +84,38 @@ async function send_txt_msg()
 * 切记，json里面,是7个配对的key和value，差1个都不行
 
 ## 多开
+```sh
+chmod +x build-injector-box.sh
+sudo docker run -itd --name wechat-bot --rm  \
+    -e HOOK_PROC_NAME=WeChat \
+    -e TARGET_AUTO_RESTART="yes" \
+    -e INJ_CONDITION="[ \"\`ps -aux | grep funtool | grep -v grep\`\" != '' ] && exit 0" \
+    -e TARGET_CMD=wechat-start \
+    -p 8080:8080 -p 5555:5555 -p 5900:5900 \
+    --add-host=dldir1.qq.com:127.0.0.1 \
+    chisbread/wechat-bot:1.0
+```
+```sh
+# 与宿主机共享屏幕, 可以共享剪切板和输入法, 但是图形界面依旧会有些bug, 
+# 整体功能不受影响。与宿主机共享屏幕会使vnc功能会失效, 这里就取消了vnc端口映射
+xhost +local: # or xhost + # 这个很重要, 不然docker容器正常启动也不会显示微信界面
+docker run -d --name wechat-bot1 \
+    --device /dev/snd \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -v $HOME/WeChatFiles:'/home/app/WeChat Files' \
+    -e DISPLAY=unix$DISPLAY \
+    -e XMODIFIERS=@im=fcitx \
+    -e QT_IM_MODULE=fcitx \
+    -e GTK_IM_MODULE=fcitx \
+    -e AUDIO_GID=`getent group audio | cut -d: -f3` \
+    -e GID=`id -g` \
+    -e UID=`id -u` \
+    -e HOOK_PROC_NAME=WeChat \
+    -e TARGET_AUTO_RESTART="yes" \
+    -e INJ_CONDITION="[ \"\`ps -aux | grep funtool | grep -v grep\`\" != '' ] && exit 0" \
+    -e TARGET_CMD=wechat-start -p 5555:5555 --add-host=dldir1.qq.com:127.0.0.1 \
+    chisbread/wechat-bot:1.0
+```
+### 参考项目
 * https://github.com/ChisBread/wechat-service
 * 记得为这位大佬加星
