@@ -86,6 +86,7 @@ async function send_txt_msg()
 ## 多开
 ```sh
 chmod +x build-injector-box.sh
+./build-injector-box.sh
 sudo docker run -itd --name wechat-bot --rm  \
     -e HOOK_PROC_NAME=WeChat \
     -e TARGET_AUTO_RESTART="yes" \
