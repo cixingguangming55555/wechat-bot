@@ -92,3 +92,7 @@ https://github.com/crazyn2?tab=repositories
 ### 参考项目
 * https://github.com/ChisBread/wechat-service
 * 记得为这位大佬加星
+
+### 网友整理文档
+[文档地址](http://robot.loveteemo.com/#/)
+[文档github](https://github.com/loveteemo/robot-doc)
