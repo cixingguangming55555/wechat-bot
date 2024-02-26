@@ -1,0 +1,17 @@
+{
+  "name": "wechat-bot",
+  "version": "0.1.0",
+  "description": "wechat-bot的nodejs客户端",
+  "main": "index.js",
+  "scripts": {
+    "start:ws": "node ./src/event.js",
+    "start:http": "node ./src/http-client.s",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request-promise": "^4.2.6",
+    "ws": "^8.16.0"
+  }
+}
