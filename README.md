@@ -40,7 +40,6 @@
 
 ## 客户端
 ```
-本质就是构造一个json，当然，http和websocket的json构造，还有一些区别，具体控制台收到的消息
 websocket 客户端  ：ws://127.0.0.1:5555/websocket 
 http  客户端：http://127.0.0.1:5555/api/get_contact
              http://127.0.0.1:5555/api/get_chatroom 
