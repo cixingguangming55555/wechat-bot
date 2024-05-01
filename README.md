@@ -25,7 +25,7 @@
 ![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/72c9bd5e-7efc-4c15-9899-0ab76ff2aa39)
 ![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/2b120879-bd53-4809-a597-071e410d1c2d)
 
-# support：3.9.8.25 and 3.9.9.43
+# support：3.9.8.25 and 3.9.9.43，64bit
 
 # Usage
 
@@ -43,7 +43,7 @@
 ## client
 * 
 ```
-websocket 客户端  ：ws://127.0.0.1:5555/websocket 
-http  客户端：http://127.0.0.1:5555/api/get_contact
+websocket：ws://127.0.0.1:5555/websocket 
+http：http://127.0.0.1:5555/api/get_contact
              http://127.0.0.1:5555/api/get_chatroom 
 ```
