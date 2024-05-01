@@ -20,7 +20,8 @@
 </p>
 
 # Notice
-* https://mp.weixin.qq.com/s/9szvSZclomy5Pcq3Y-yH1A
+* 微信安全中心公告：https://mp.weixin.qq.com/s/9szvSZclomy5Pcq3Y-yH1A
+  
 ![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/72c9bd5e-7efc-4c15-9899-0ab76ff2aa39)
 ![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/2b120879-bd53-4809-a597-071e410d1c2d)
 
