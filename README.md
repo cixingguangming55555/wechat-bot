@@ -1,4 +1,3 @@
-# 已经删除funtool.exe
 # Wechat-bot 馈人玫瑰之手，历久犹有余香
 <a href="https://github.com/cixingguangming55555/wechat-bot">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=cixingguangming55555&repo=wechat-bot" />
@@ -20,9 +19,11 @@
   </a>
 </p>
 
-# 微信版本：3.9.2.23
+# 注意事项
+![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/72c9bd5e-7efc-4c15-9899-0ab76ff2aa39)
+![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/2b120879-bd53-4809-a597-071e410d1c2d)
 
-# 新坑QQ群: 712370539
+# 微信版本：3.9.2.23
 
 # 如何使用
 
