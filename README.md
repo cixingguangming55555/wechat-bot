@@ -34,6 +34,8 @@
 第二步 退出：CTRL + C
 
 切记：不要在接收消息的时候退出
+![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/24c53ad8-bce6-4ce3-b9a4-26abc5d21b45)
+
 ```
 ## 客户端
 ```
