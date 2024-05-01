@@ -36,7 +36,8 @@
 切记：不要在接收消息的时候退出
 
 ```
-![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/24c53ad8-bce6-4ce3-b9a4-26abc5d21b45)
+![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/e296cfe6-05cf-4d86-bbb7-09b7574137ff)
+
 ## 客户端
 ```
 本质就是构造一个json，当然，http和websocket的json构造，还有一些区别，具体控制台收到的消息
