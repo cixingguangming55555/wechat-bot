@@ -31,9 +31,9 @@
 
 ## server
 ```
-第一步 start：run funtool or funtool -p port,default port is 5555
+start：run funtool or funtool -p port,default port is 5555
 
-第二步 exit：CTRL + C
+exit：CTRL + C
 
 切记：不要在接收消息的时候退出
 
