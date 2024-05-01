@@ -19,26 +19,28 @@
   </a>
 </p>
 
-# 注意事项
+# Notice
+* https://mp.weixin.qq.com/s/9szvSZclomy5Pcq3Y-yH1A
 ![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/72c9bd5e-7efc-4c15-9899-0ab76ff2aa39)
 ![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/2b120879-bd53-4809-a597-071e410d1c2d)
 
 # support：3.9.8.25 and 3.9.9.43
 
-# 如何使用
+# Usage
 
-## 服务器端
+## server
 ```
-第一步 运行：打开命令行窗口，执行  funtool 或者 funtool -p port ,deafult port is 5555
+第一步 start：run funtool or funtool -p port,default port is 5555
 
-第二步 退出：CTRL + C
+第二步 exit：CTRL + C
 
 切记：不要在接收消息的时候退出
 
 ```
 ![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/e296cfe6-05cf-4d86-bbb7-09b7574137ff)
 
-## 客户端
+## client
+* 
 ```
 websocket 客户端  ：ws://127.0.0.1:5555/websocket 
 http  客户端：http://127.0.0.1:5555/api/get_contact
