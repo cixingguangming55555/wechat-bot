@@ -41,9 +41,9 @@
 ![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/e296cfe6-05cf-4d86-bbb7-09b7574137ff)
 
 ## client
-* 
 ```
 websocket：ws://127.0.0.1:5555/websocket 
-http：http://127.0.0.1:5555/api/get_contact
-             http://127.0.0.1:5555/api/get_chatroom 
+http api：
+      http://127.0.0.1:5555/api/get_contact
+      http://127.0.0.1:5555/api/get_chatroom 
 ```
