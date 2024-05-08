@@ -7,16 +7,12 @@
 </a>
 
 <p align="center">
-  <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="120">
+  <img src="https://i.loli.net/2020/05/09/HXClIf5A2EpUG4u.png" width="240">
 </p>
 
 <p align="center">
-   <a href="https://github.com/cixingguangming55555/wechat-bot/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/cixingguangming55555/wechat-bot" alt="GitHub">
-  </a>
-  <a href="https://github.com/cixingguangming55555/wechat-bot/releases">
-    <img src="https://img.shields.io/github/v/release/cixingguangming55555/wechat-bot?include_prereleases" alt="license">
-  </a>
+<img alt="GitHub stars badge" src="https://img.shields.io/github/stars/cixingguangming55555/wechat-bot"> <img alt="GitHub forks badge" src="https://img.shields.io/github/forks/cixingguangming55555/wechat-bot"> <img alt="GitHub license badge" src="https://img.shields.io/github/license/cixingguangming55555/wechat-bot">
+
 </p>
 
 # Notice
