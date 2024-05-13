@@ -45,6 +45,9 @@ exit：CTRL + C
 websocket：ws://127.0.0.1:5555/websocket 
 http api：
       http://127.0.0.1:5555/api/get_contact
-      http://127.0.0.1:5555/api/get_chatroom 
+      http://127.0.0.1:5555/api/get_chatroom
+message type:
+   886:anti revoke
+   887:receive adn save image to path
 ```
 ## QQ group :103749758
