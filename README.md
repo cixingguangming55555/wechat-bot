@@ -43,7 +43,7 @@ exit：CTRL + C
 ## client
 ```
 websocket：ws://127.0.0.1:5555/websocket 
-http api：
+http api（post)：
       http://127.0.0.1:5555/api/get_contact
       http://127.0.0.1:5555/api/get_chatroom
       http://127.0.0.1:5555/api/get_myself
