@@ -48,6 +48,7 @@ http api（post)：
       http://127.0.0.1:5555/api/get_chatroom
       http://127.0.0.1:5555/api/get_myself
       http://127.0.0.1:5555/api/send_txt（见http.js)
+      http://127.0.0.1:5555/api/send_pic (见http.js)
 message type:
    886:anti revoke(not open)
    887:receive adn save image to path
