@@ -1,6 +1,7 @@
 /****************************************
  * 重要：3.2.1.121，http的客户端已经改变调用方式
  * send_txt
+ * send_pic
  * ***************************************/
 
 const rp = require('request-promise');
@@ -48,6 +49,22 @@ async function send_txt()
       return data;
 }
 
+async function send_pic()
+{
+
+    const options =
+      {
+          method: 'POST',
+          url: url+'/api/send_pic',
+          body:{
+           wxid:'wx id',//接收消息的wxid
+          "content":"C:\\temp\\ocr\\3.jpg"
+        },
+        json:true
+      };
+      let data = await rp(options);
+      return data;
+}
 
 async function main()
 {
