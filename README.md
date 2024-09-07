@@ -54,4 +54,4 @@ message type:
    886:anti revoke(not open)
    887:receive adn save image to path
 ```
-## QQ group :103749758
+## QQ group :103749758(1群已满） 812741496（2群）
