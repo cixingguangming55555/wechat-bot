@@ -66,6 +66,23 @@ async function send_pic()
       return data;
 }
 
+async function get_nick()
+{
+
+    const options =
+      {
+          method: 'POST',
+          url: url+'/api/get_nick',
+          body:{
+           wxid:'wx id',//需要获取昵称的的wxid
+          "roomid":"room id"//你的微信群id,类似:xxxxx@chatroom
+        },
+        json:true
+      };
+      let data = await rp(options);
+      return data;
+}
+
 async function main()
 {
 
