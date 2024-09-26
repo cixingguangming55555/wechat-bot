@@ -54,4 +54,6 @@ message type:
    886:anti revoke(not open)
    887:receive adn save image to path
 ```
+## ChangeLog
+* v0.0.93 heart beat support;disable auto update
 ## QQ group :103749758(1群已满） 812741496（2群）
