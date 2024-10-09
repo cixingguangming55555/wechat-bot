@@ -56,4 +56,4 @@ message type:
 ```
 ## ChangeLog
 * v0.0.93 heart beat support;disable auto update
-## QQ group :103749758(1群已满） 812741496（2群）
+## QQ group :103749758(1群已满） 812741469（2群）
