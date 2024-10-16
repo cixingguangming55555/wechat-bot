@@ -45,9 +45,9 @@ exit：CTRL + C
 websocket：ws://127.0.0.1:5555/websocket 
 http api（post)：
       http://127.0.0.1:5555/api/get_contact
-      http://127.0.0.1:5555/api/get_chatroom  （获取群和群成员，群多的微信会崩溃）
-      http://127.0.0.1:5555/api/get_chatroom_v1 (获取群和群成员索引:idx)
-      http://127.0.0.1:5555/api/get_member      (根据get_chatroom_v1获取的idx，获取群成员的wxid，和http://127.0.0.1:5555/api/get_chatroom_v1搭配使用)
+      http://127.0.0.1:5555/api/get_chatroom  （Get groups and group members, WeChat with too many groups will crash）
+      http://127.0.0.1:5555/api/get_chatroom_v1 (Get group and group member index: idx)
+      http://127.0.0.1:5555/api/get_member      (Obtain the wxid of group members based on the idx obtained from get_chatroom_v1, and http://127.0.0.1:5555/api/get_chatroom_v1 Paired use)
       http://127.0.0.1:5555/api/get_myself
       http://127.0.0.1:5555/api/send_txt（见http.js)
       http://127.0.0.1:5555/api/send_pic (见http.js)
@@ -57,5 +57,9 @@ message type:
    887:receive adn save image to path
 ```
 ## ChangeLog
-* v0.0.93 heart beat support;disable auto update
+### v0.0.93
+* heart beat support;disable auto update
+### v0.0.94
+* get_chatroom_v1 + get_member  === get_chatroom
+  
 ## QQ group :103749758(1群已满） 812741469（2群）
