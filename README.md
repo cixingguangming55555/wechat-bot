@@ -45,7 +45,9 @@ exit：CTRL + C
 websocket：ws://127.0.0.1:5555/websocket 
 http api（post)：
       http://127.0.0.1:5555/api/get_contact
-      http://127.0.0.1:5555/api/get_chatroom
+      http://127.0.0.1:5555/api/get_chatroom  （获取群和群成员，群多的微信会崩溃）
+      http://127.0.0.1:5555/api/get_chatroom_v1 (获取群和群成员索引:idx)
+      http://127.0.0.1:5555/api/get_member      (根据get_chatroom_v1获取的idx，获取群成员的wxid，和http://127.0.0.1:5555/api/get_chatroom_v1搭配使用)
       http://127.0.0.1:5555/api/get_myself
       http://127.0.0.1:5555/api/send_txt（见http.js)
       http://127.0.0.1:5555/api/send_pic (见http.js)
