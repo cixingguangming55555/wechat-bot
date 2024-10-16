@@ -66,6 +66,27 @@ async function send_pic()
       return data;
 }
 
+
+/// 和http://127.0.0.1:5555/api/get_chatroom_v1搭配使用
+/*
+idx通过调用http://127.0.0.1:5555/api/get_chatroom_v1获得
+*/
+async function get_member()
+{
+
+    const options =
+      {
+          method: 'POST',
+          url: url+'/api/get_member',
+          body:{
+          "idx":2844416549408  //idx通过调用http://127.0.0.1:5555/api/get_chatroom_v1获得
+        },
+        json:true
+      };
+      let data = await rp(options);
+      return data;
+}
+
 async function get_nick()
 {
 
