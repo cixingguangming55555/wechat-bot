@@ -61,5 +61,3 @@ message type:
 * heart beat support;disable auto update
 ### v0.0.94
 * get_chatroom_v1 + get_member  === get_chatroom
-  
-## QQ group :103749758(1群已满） 812741469（2群）
