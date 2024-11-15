@@ -18,6 +18,8 @@
     <img src="https://img.shields.io/github/v/release/cixingguangming55555/wechat-bot?include_prereleases" alt="license">
   </a>
 </p>
+# wechat tool
+* print log 
 
 # Notice
 * 微信安全中心公告：https://mp.weixin.qq.com/s/9szvSZclomy5Pcq3Y-yH1A
