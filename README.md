@@ -20,7 +20,7 @@
 </p>
 
 # wechat tool
-* print log 
+* print log （4.0.0.26,64bit）
 
 # Notice
 * 微信安全中心公告：https://mp.weixin.qq.com/s/9szvSZclomy5Pcq3Y-yH1A
