@@ -21,6 +21,7 @@
 
 # wechat tool
 * print log （4.0.0.26,64bit）
+![image](https://github.com/user-attachments/assets/2658ca3d-4f4b-4ea5-bbb7-a32843275d1f)
 
 # Notice
 * 微信安全中心公告：https://mp.weixin.qq.com/s/9szvSZclomy5Pcq3Y-yH1A
