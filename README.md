@@ -31,7 +31,7 @@
 
 # wechat bot
 * support：3.9.9.43，64bit，Tested only on Win11 Home Edition
-
+* 从2024-12-02起，不再加白名单，满员了，抱歉
 # Usage
 
 ## server
