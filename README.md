@@ -21,6 +21,7 @@
 </p>
 
 # wechat tool
+* disable auto update--funtool.4.0.0.26.disable.auto.update.exe
 * print log （4.0.0.26,64bit）
 ![image](https://github.com/user-attachments/assets/2658ca3d-4f4b-4ea5-bbb7-a32843275d1f)
 
