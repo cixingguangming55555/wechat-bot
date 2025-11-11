@@ -21,6 +21,7 @@
 
 # wechat tool
 * disable auto update--funtool.4.0.0.26.disable.auto.update.exe
+* funtool-4.0.0.26-receive-message.exe
 * print log （4.0.0.26,64bit）
 ![image](https://github.com/user-attachments/assets/2658ca3d-4f4b-4ea5-bbb7-a32843275d1f)
 
@@ -30,9 +31,6 @@
 ![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/72c9bd5e-7efc-4c15-9899-0ab76ff2aa39)
 ![image](https://github.com/cixingguangming55555/wechat-bot/assets/61132896/2b120879-bd53-4809-a597-071e410d1c2d)
 
-# wechat bot
-* support：3.9.9.43，64bit，Tested only on Win11 Home Edition
-* 从2024-12-02起，不再加白名单，满员了，抱歉
 # Usage
 
 ## server
