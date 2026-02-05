@@ -11,9 +11,10 @@
 
 # wechat tool（已下线）
 # funtool
-## kimi k2.5
+## kimi k2.5 (基于nvidia免费大模型的claude code cli代理）
 [程序下载](https://github.com/cixingguangming55555/wechat-bot/blob/master/funtool/claude-nvidia-proxy-kimi25.exe)
 [kimi说明文档](https://mp.weixin.qq.com/s/RADCpKEwY29AGQifA7Seuw)
-## glm 4.7
+## glm 4.7 (基于nvidia免费大模型的claude code cli代理）
+[程序下载](https://github.com/cixingguangming55555/wechat-bot/bl
 [程序下载](https://github.com/cixingguangming55555/wechat-bot/blob/master/funtool/claude-nvidia-proxy.exe)
 [glm说明文档](https://mp.weixin.qq.com/s/zeqsvai0ObRbdGO2ivvbSQ)
