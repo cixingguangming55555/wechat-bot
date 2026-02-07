@@ -17,3 +17,7 @@
 ## glm 4.7 (基于nvidia免费大模型的claude code cli代理）
 [程序下载](https://github.com/cixingguangming55555/wechat-bot/blob/master/funtool/claude-nvidia-proxy.exe)
 [glm说明文档](https://mp.weixin.qq.com/s/zeqsvai0ObRbdGO2ivvbSQ)
+
+## qwen
+[程序下载](https://github.com/cixingguangming55555/wechat-bot/blob/master/funtool/claude-nvidia-proxy.exe)
+[qwen说明文档]
